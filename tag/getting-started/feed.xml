@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="/blog/tag/getting-started/feed.xml" rel="self" type="application/atom+xml" />
   <link href="/blog/" rel="alternate" type="text/html" />
-  <updated>2020-02-22T18:07:25+00:00</updated>
+  <updated>2020-02-22T18:11:06+00:00</updated>
   <id>/blog/tag/getting-started/feed.xml</id>
 
   
@@ -48,8 +48,8 @@
     <entry>
       <title type="html">Welcome to the swordph1sh blog</title>
       <link href="/blog/welcome" rel="alternate" type="text/html" title="Welcome to the swordph1sh blog" />
-      <published>2017-07-27T10:00:00+00:00</published>
-      <updated>2017-07-27T10:00:00+00:00</updated>
+      <published>2020-02-22T10:00:00+00:00</published>
+      <updated>2020-02-22T10:00:00+00:00</updated>
       <id>/blog/welcome</id>
       <content type="html" xml:base="/blog/welcome">&lt;p&gt;Hey! Welcome to a new blog :)&lt;/p&gt;
 
