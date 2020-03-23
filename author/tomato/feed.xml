@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="/blog/author/tomato/feed.xml" rel="self" type="application/atom+xml" />
   <link href="/blog/" rel="alternate" type="text/html" />
-  <updated>2020-03-23T06:46:15+00:00</updated>
+  <updated>2020-03-23T06:53:55+00:00</updated>
   <id>/blog/author/tomato/feed.xml</id>
 
   
@@ -70,6 +70,7 @@ Please use &lt;a title=&quot;Cuckoos Project&quot; href=&quot;https://cuckoosand
 
 &lt;ul&gt;
 &lt;li&gt;many packages, list to follow...&lt;/li&gt;
+
 &lt;hr /&gt;
 
 &lt;h4 id=&quot;pip&quot;&gt;Install pip&lt;/h4&gt;
@@ -89,7 +90,8 @@ $ source ./venv/bin/activate
 $ cd venv
 (venv)$ pip install -U pip setuptools&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-So, when you try to install Cuckoos from pip, as seen below, you will get an error on capstone and unicorn packages:
+
+&lt;p&gt;So, when you try to install Cuckoos from pip, as seen below, you will get an error on capstone and unicorn packages:&lt;/p&gt;
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;(venv)$ pip install -U cuckoo
 PYTHONWARNINGS=ignore:DEPRECATION pip install cuckoo
     Processing
