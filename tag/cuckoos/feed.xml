@@ -2,10 +2,10 @@
 
 <feed xmlns="http://www.w3.org/2005/Atom" >
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
-  <link href="/blog/author/tomato/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="/blog/tag/cuckoos/feed.xml" rel="self" type="application/atom+xml" />
   <link href="/blog/" rel="alternate" type="text/html" />
   <updated>2020-03-23T00:06:18+00:00</updated>
-  <id>/blog/author/tomato/feed.xml</id>
+  <id>/blog/tag/cuckoos/feed.xml</id>
 
   
   
@@ -88,50 +88,6 @@ Install pip:
 
       
         <summary type="html">We will cover only installing Cuckoos and not the configurating process since this is really the most difficult hurdle we have seen for new analyst. Please use Cuckoos Project for configurations recommendations.</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">Welcome to the swordph1sh blog</title>
-      <link href="/blog/welcome" rel="alternate" type="text/html" title="Welcome to the swordph1sh blog" />
-      <published>2020-02-22T10:00:00+00:00</published>
-      <updated>2020-02-22T10:00:00+00:00</updated>
-      <id>/blog/welcome</id>
-      <content type="html" xml:base="/blog/welcome">&lt;p&gt;Hey! Welcome to a new blog :)&lt;/p&gt;
-
-&lt;h3 id=&quot;orderedlist&quot;&gt;Slow work in progress&lt;/h3&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Looking for topics&lt;/li&gt;
-&lt;li&gt;Testing pages&lt;/li&gt;
-&lt;li&gt;Theme ideas&lt;br /&gt;
-&lt;ol&gt;&lt;li&gt;New pics for topics&lt;/li&gt;
-&lt;li&gt;Testing pics for blog theme&lt;/li&gt;&lt;/ol&gt;&lt;/li&gt;
-&lt;/ol&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Tomato</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="Getting started" />
-      
-
-      
-        <summary type="html">Hey! Welcome to a new blog :)</summary>
       
 
       
