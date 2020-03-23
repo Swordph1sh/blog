@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="/blog/author/tomato/feed.xml" rel="self" type="application/atom+xml" />
   <link href="/blog/" rel="alternate" type="text/html" />
-  <updated>2020-03-23T06:40:30+00:00</updated>
+  <updated>2020-03-23T06:42:42+00:00</updated>
   <id>/blog/author/tomato/feed.xml</id>
 
   
@@ -90,7 +90,24 @@ $ cd venv
 (venv)$ pip install -U pip setuptools&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 So, when you try to install Cuckoos from pip, as seen below, you will git an error on capstone and unicorn packages:
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;(venv)$ pip install -U cuckoo&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;(venv)$ pip install -U cuckoo
+PYTHONWARNINGS=ignore:DEPRECATION pip install cuckoo
+    Processing
+    …
+    Collecting django==1.8.4
+      Using cached Django-1.8.4-py2.py3-none-any.whl (6.2 MB)
+    …
+    Building wheels for collected packages: unicorn, capstone
+      Building wheel for unicorn (setup.py) ... error
+      ERROR: Command errored out with exit status 1:
+    …
+    Running setup.py clean for unicorn
+      Building wheel for capstone (setup.py) ... error
+    …
+    Running setup.py clean for capstone
+    Failed to build unicorn capstone
+    …
+    command output.&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;hr /&gt;
 
