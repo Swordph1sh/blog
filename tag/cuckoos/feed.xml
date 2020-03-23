@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="/blog/tag/cuckoos/feed.xml" rel="self" type="application/atom+xml" />
   <link href="/blog/" rel="alternate" type="text/html" />
-  <updated>2020-03-23T00:06:18+00:00</updated>
+  <updated>2020-03-23T05:52:31+00:00</updated>
   <id>/blog/tag/cuckoos/feed.xml</id>
 
   
@@ -52,7 +52,7 @@
       <updated>2020-03-22T04:20:00+00:00</updated>
       <id>/blog/cuckoo-install</id>
       <content type="html" xml:base="/blog/cuckoo-install">&lt;p&gt;We will cover only installing Cuckoos and not the configurating process since this is really the most difficult hurdle we have seen for new analyst.
-Please use &lt;a title=&quot;Cuckoos Project&quot; href=&quot;https://cuckoosandbox.org/&quot;&gt;Cuckoos Project &lt;/a&gt; for configurations recommendations.&lt;/p&gt;
+Please use &lt;a title=&quot;Cuckoos Project&quot; href=&quot;https://cuckoosandbox.org/&quot;&gt;Cuckoos Project &lt;/a&gt; for configuration recommendations.&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -64,8 +64,18 @@ Please use &lt;a title=&quot;Cuckoos Project&quot; href=&quot;https://cuckoosand
 &lt;li&gt;virtualenv&lt;/li&gt;
 &lt;/ul&gt;
 
-Install pip:
+&lt;h4 id=&quot;Install pip&quot;&gt;Heading 4&lt;/h4&gt;
 &lt;pre&gt;$ sudo easy_install pip &lt;/pre&gt;
+
+
+&lt;h4 id=&quot;Install virtualenv &amp; activate&quot;&gt;Heading 4&lt;/h4&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;$ cd cuckoo_sanbox/
+$ virtualenv venv
+virtualenv venv
+created virtual environment…
+…
+  activators PythonActivator…&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
 &lt;hr /&gt;</content>
 
       
@@ -87,7 +97,7 @@ Install pip:
       
 
       
-        <summary type="html">We will cover only installing Cuckoos and not the configurating process since this is really the most difficult hurdle we have seen for new analyst. Please use Cuckoos Project for configurations recommendations.</summary>
+        <summary type="html">We will cover only installing Cuckoos and not the configurating process since this is really the most difficult hurdle we have seen for new analyst. Please use Cuckoos Project for configuration recommendations.</summary>
       
 
       

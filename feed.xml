@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/blog/" rel="alternate" type="text/html" /><updated>2020-03-23T00:06:18+00:00</updated><id>/blog/</id><title type="html">Blog</title><subtitle>A new beginning...</subtitle><entry><title type="html">Installing Cuckoo Sandbox on macOS</title><link href="/blog/cuckoo-install" rel="alternate" type="text/html" title="Installing Cuckoo Sandbox on macOS" /><published>2020-03-22T04:20:00+00:00</published><updated>2020-03-22T04:20:00+00:00</updated><id>/blog/cuckoo-install</id><content type="html" xml:base="/blog/cuckoo-install">&lt;p&gt;We will cover only installing Cuckoos and not the configurating process since this is really the most difficult hurdle we have seen for new analyst.
-Please use &lt;a title=&quot;Cuckoos Project&quot; href=&quot;https://cuckoosandbox.org/&quot;&gt;Cuckoos Project &lt;/a&gt; for configurations recommendations.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/blog/" rel="alternate" type="text/html" /><updated>2020-03-23T05:52:31+00:00</updated><id>/blog/</id><title type="html">Blog</title><subtitle>A new beginning...</subtitle><entry><title type="html">Installing Cuckoo Sandbox on macOS</title><link href="/blog/cuckoo-install" rel="alternate" type="text/html" title="Installing Cuckoo Sandbox on macOS" /><published>2020-03-22T04:20:00+00:00</published><updated>2020-03-22T04:20:00+00:00</updated><id>/blog/cuckoo-install</id><content type="html" xml:base="/blog/cuckoo-install">&lt;p&gt;We will cover only installing Cuckoos and not the configurating process since this is really the most difficult hurdle we have seen for new analyst.
+Please use &lt;a title=&quot;Cuckoos Project&quot; href=&quot;https://cuckoosandbox.org/&quot;&gt;Cuckoos Project &lt;/a&gt; for configuration recommendations.&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -11,9 +11,19 @@ Please use &lt;a title=&quot;Cuckoos Project&quot; href=&quot;https://cuckoosand
 &lt;li&gt;virtualenv&lt;/li&gt;
 &lt;/ul&gt;
 
-Install pip:
+&lt;h4 id=&quot;Install pip&quot;&gt;Heading 4&lt;/h4&gt;
 &lt;pre&gt;$ sudo easy_install pip &lt;/pre&gt;
-&lt;hr /&gt;</content><author><name>Tomato</name></author><category term="Cuckoos" /><summary type="html">We will cover only installing Cuckoos and not the configurating process since this is really the most difficult hurdle we have seen for new analyst. Please use Cuckoos Project for configurations recommendations.</summary></entry><entry><title type="html">Welcome to the swordph1sh blog</title><link href="/blog/welcome" rel="alternate" type="text/html" title="Welcome to the swordph1sh blog" /><published>2020-02-22T10:00:00+00:00</published><updated>2020-02-22T10:00:00+00:00</updated><id>/blog/welcome</id><content type="html" xml:base="/blog/welcome">&lt;p&gt;Hey! Welcome to a new blog :)&lt;/p&gt;
+
+
+&lt;h4 id=&quot;Install virtualenv &amp; activate&quot;&gt;Heading 4&lt;/h4&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;$ cd cuckoo_sanbox/
+$ virtualenv venv
+virtualenv venv
+created virtual environment…
+…
+  activators PythonActivator…&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;hr /&gt;</content><author><name>Tomato</name></author><category term="Cuckoos" /><summary type="html">We will cover only installing Cuckoos and not the configurating process since this is really the most difficult hurdle we have seen for new analyst. Please use Cuckoos Project for configuration recommendations.</summary></entry><entry><title type="html">Welcome to the swordph1sh blog</title><link href="/blog/welcome" rel="alternate" type="text/html" title="Welcome to the swordph1sh blog" /><published>2020-02-22T10:00:00+00:00</published><updated>2020-02-22T10:00:00+00:00</updated><id>/blog/welcome</id><content type="html" xml:base="/blog/welcome">&lt;p&gt;Hey! Welcome to a new blog :)&lt;/p&gt;
 
 &lt;h3 id=&quot;orderedlist&quot;&gt;Slow work in progress&lt;/h3&gt;
 
