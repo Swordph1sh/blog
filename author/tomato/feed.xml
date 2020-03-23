@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="/blog/author/tomato/feed.xml" rel="self" type="application/atom+xml" />
   <link href="/blog/" rel="alternate" type="text/html" />
-  <updated>2020-03-23T06:24:39+00:00</updated>
+  <updated>2020-03-23T06:26:27+00:00</updated>
   <id>/blog/author/tomato/feed.xml</id>
 
   
@@ -81,7 +81,7 @@ $ source ./venv/bin/activate
 $ cd venv&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;hr /&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://github.com/Swordph1sh/blog/blob/master/assets/images/cuckoos-blog-start.jpg&quot; alt=&quot;start&quot; /&gt;&lt;/p&gt;</content>
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/Swordph1sh/blog/master/assets/images/cuckoos-blog-start.jpg&quot; alt=&quot;start&quot; /&gt;&lt;/p&gt;</content>
 
       
       
