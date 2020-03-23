@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="/blog/tag/cuckoos/feed.xml" rel="self" type="application/atom+xml" />
   <link href="/blog/" rel="alternate" type="text/html" />
-  <updated>2020-03-23T06:04:38+00:00</updated>
+  <updated>2020-03-23T06:23:04+00:00</updated>
   <id>/blog/tag/cuckoos/feed.xml</id>
 
   
@@ -74,9 +74,14 @@ $ virtualenv venv
 virtualenv venv
 created virtual environment…
 …
-  activators PythonActivator…&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+  activators PythonActivator… 
 
-&lt;hr /&gt;</content>
+
+$ source ./venv/bin/activate
+$ cd venv&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/Swordph1sh/blog/blob/master/assets/images/cuckoos-blog-start.jpg&quot; alt=&quot;start&quot; /&gt;&lt;/p&gt;</content>
 
       
       
