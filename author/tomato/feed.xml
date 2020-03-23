@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="/blog/author/tomato/feed.xml" rel="self" type="application/atom+xml" />
   <link href="/blog/" rel="alternate" type="text/html" />
-  <updated>2020-03-23T06:56:24+00:00</updated>
+  <updated>2020-03-23T07:03:40+00:00</updated>
   <id>/blog/author/tomato/feed.xml</id>
 
   
@@ -111,6 +111,12 @@ PYTHONWARNINGS=ignore:DEPRECATION pip install cuckoo
     Failed to build unicorn capstone
     …
     command output.&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+
+&lt;h4 id=&quot;fix&quot;&gt;The fix&lt;/h4&gt;
+
+&lt;p&gt;We will need to download Cuckoos, edit capstone package, and modify Cuckoo criteria list of the package&lt;/p&gt;
+&lt;p&gt; adding fix...&lt;/p&gt;
 
 &lt;hr /&gt;
 
