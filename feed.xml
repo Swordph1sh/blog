@@ -1,15 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/blog/" rel="alternate" type="text/html" /><updated>2020-03-23T06:26:27+00:00</updated><id>/blog/</id><title type="html">Blog</title><subtitle>A new beginning...</subtitle><entry><title type="html">Installing Cuckoo Sandbox on macOS</title><link href="/blog/cuckoo-install" rel="alternate" type="text/html" title="Installing Cuckoo Sandbox on macOS" /><published>2020-03-22T04:20:00+00:00</published><updated>2020-03-22T04:20:00+00:00</updated><id>/blog/cuckoo-install</id><content type="html" xml:base="/blog/cuckoo-install">&lt;p&gt;We will cover only installing Cuckoos and not the configurating process since this is really the most difficult hurdle we have seen for new analyst.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/blog/" rel="alternate" type="text/html" /><updated>2020-03-23T06:40:30+00:00</updated><id>/blog/</id><title type="html">Blog</title><subtitle>A new beginning...</subtitle><entry><title type="html">Installing Cuckoo Sandbox on macOS</title><link href="/blog/cuckoo-install" rel="alternate" type="text/html" title="Installing Cuckoo Sandbox on macOS" /><published>2020-03-22T04:20:00+00:00</published><updated>2020-03-22T04:20:00+00:00</updated><id>/blog/cuckoo-install</id><content type="html" xml:base="/blog/cuckoo-install">&lt;p&gt;We will cover only installing Cuckoos and not the configurating process since this is really the most difficult hurdle we have seen for new analyst.
 Please use &lt;a title=&quot;Cuckoos Project&quot; href=&quot;https://cuckoosandbox.org/&quot;&gt;Cuckoos Project &lt;/a&gt; for configuration recommendations.&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;p&gt;On a new macOS system there are a couple things we need to gather before installing&lt;/p&gt;
-&lt;h3 id=&quot; Pre-install&quot;&gt;Pre-install collection &lt;/h3&gt;
+&lt;p&gt;On a new macOS system there are a couple things we need to gather before installing, we will call this pre-install. 
+  For install we will need multiple packages, we will call this install&lt;/p&gt;
+
+&lt;h3 id=&quot;Pre-install&quot;&gt;Pre-install collection &lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;pip&lt;/li&gt;
 &lt;li&gt;virtualenv&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;h3 id=&quot;install&quot;&gt;Install&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;many packages, list to follow...&lt;/li&gt;
+&lt;hr /&gt;
 
 &lt;h4 id=&quot;pip&quot;&gt;Install pip&lt;/h4&gt;
 &lt;pre&gt;$ sudo easy_install pip &lt;/pre&gt;
@@ -25,7 +33,12 @@ created virtual environment…
 
 
 $ source ./venv/bin/activate
-$ cd venv&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+$ cd venv
+(venv)$ pip install -U pip setuptools&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+So, when you try to install Cuckoos from pip, as seen below, you will git an error on capstone and unicorn packages:
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;(venv)$ pip install -U cuckoo&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
 &lt;hr /&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/Swordph1sh/blog/master/assets/images/cuckoos-blog-start.jpg&quot; alt=&quot;start&quot; /&gt;&lt;/p&gt;</content><author><name>Tomato</name></author><category term="Cuckoos" /><summary type="html">We will cover only installing Cuckoos and not the configurating process since this is really the most difficult hurdle we have seen for new analyst. Please use Cuckoos Project for configuration recommendations.</summary></entry><entry><title type="html">Welcome to the swordph1sh blog</title><link href="/blog/welcome" rel="alternate" type="text/html" title="Welcome to the swordph1sh blog" /><published>2020-02-22T10:00:00+00:00</published><updated>2020-02-22T10:00:00+00:00</updated><id>/blog/welcome</id><content type="html" xml:base="/blog/welcome">&lt;p&gt;Hey! Welcome to a new blog :)&lt;/p&gt;

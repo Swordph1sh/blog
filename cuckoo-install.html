@@ -177,13 +177,21 @@ Please use <a title="Cuckoos Project" href="https://cuckoosandbox.org/">Cuckoos 
 
 <hr />
 
-<p>On a new macOS system there are a couple things we need to gather before installing</p>
-<h3 id=" Pre-install">Pre-install collection </h3>
+<p>On a new macOS system there are a couple things we need to gather before installing, we will call this pre-install. 
+  For install we will need multiple packages, we will call this install</p>
+
+<h3 id="Pre-install">Pre-install collection </h3>
 
 <ul>
 <li>pip</li>
 <li>virtualenv</li>
 </ul>
+
+<h3 id="install">Install</h3>
+
+<ul>
+<li>many packages, list to follow...</li>
+<hr />
 
 <h4 id="pip">Install pip</h4>
 <pre>$ sudo easy_install pip </pre>
@@ -199,7 +207,12 @@ created virtual environment…
 
 
 $ source ./venv/bin/activate
-$ cd venv</code></pre></figure>
+$ cd venv
+(venv)$ pip install -U pip setuptools</code></pre></figure>
+
+So, when you try to install Cuckoos from pip, as seen below, you will git an error on capstone and unicorn packages:
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">(venv)$ pip install -U cuckoo</code></pre></figure>
+
 <hr />
 
 <p><img src="https://raw.githubusercontent.com/Swordph1sh/blog/master/assets/images/cuckoos-blog-start.jpg" alt="start" /></p>
