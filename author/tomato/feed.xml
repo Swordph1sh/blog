@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="/blog/author/tomato/feed.xml" rel="self" type="application/atom+xml" />
   <link href="/blog/" rel="alternate" type="text/html" />
-  <updated>2020-03-27T08:16:06+00:00</updated>
+  <updated>2020-03-27T08:19:31+00:00</updated>
   <id>/blog/author/tomato/feed.xml</id>
 
   
@@ -102,7 +102,7 @@ PYTHONWARNINGS=ignore:DEPRECATION pip install cuckoo
     …
     Building wheels for collected packages: unicorn, capstone
       Building wheel for unicorn (setup.py) ... error
-      &amp;lt;ERROR: Command errored out with exit status 1:
+      ERROR: Command errored out with exit status 1:
     …
     Running setup.py clean for unicorn
       Building wheel for capstone (setup.py) ... error
