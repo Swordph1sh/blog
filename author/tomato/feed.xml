@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="/blog/author/tomato/feed.xml" rel="self" type="application/atom+xml" />
   <link href="/blog/" rel="alternate" type="text/html" />
-  <updated>2020-03-27T08:08:19+00:00</updated>
+  <updated>2020-03-27T08:16:06+00:00</updated>
   <id>/blog/author/tomato/feed.xml</id>
 
   
@@ -102,7 +102,7 @@ PYTHONWARNINGS=ignore:DEPRECATION pip install cuckoo
     …
     Building wheels for collected packages: unicorn, capstone
       Building wheel for unicorn (setup.py) ... error
-      &amp;lt;span style=&amp;quot;color:red&amp;quot;&amp;gt;ERROR: Command errored out with exit status 1:&amp;lt;/span&amp;gt;
+      &amp;lt;ERROR: Command errored out with exit status 1:
     …
     Running setup.py clean for unicorn
       Building wheel for capstone (setup.py) ... error
@@ -110,9 +110,8 @@ PYTHONWARNINGS=ignore:DEPRECATION pip install cuckoo
     Running setup.py clean for capstone
     Failed to build unicorn capstone
     …
-    &amp;lt;span style=&amp;quot;color:red; font-family:Georgia; font-size:2em;&amp;quot;&amp;gt;command output.&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+    command output.&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Roses are &lt;span style=&quot;color:red; font-family:Georgia; font-size:2em;&quot;&gt;red.&lt;/span&gt;
   
 &lt;h4 id=&quot;fix&quot;&gt;The fix&lt;/h4&gt;
 

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/blog/" rel="alternate" type="text/html" /><updated>2020-03-27T08:08:19+00:00</updated><id>/blog/</id><title type="html">Blog</title><subtitle>A new beginning...</subtitle><entry><title type="html">Installing Cuckoo Sandbox on macOS</title><link href="/blog/cuckoo-install" rel="alternate" type="text/html" title="Installing Cuckoo Sandbox on macOS" /><published>2020-03-22T04:20:00+00:00</published><updated>2020-03-22T04:20:00+00:00</updated><id>/blog/cuckoo-install</id><content type="html" xml:base="/blog/cuckoo-install">&lt;p&gt;We will cover only installing Cuckoos and not the configurating process since this is really the most difficult hurdle we have seen for new analyst.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/blog/" rel="alternate" type="text/html" /><updated>2020-03-27T08:16:06+00:00</updated><id>/blog/</id><title type="html">Blog</title><subtitle>A new beginning...</subtitle><entry><title type="html">Installing Cuckoo Sandbox on macOS</title><link href="/blog/cuckoo-install" rel="alternate" type="text/html" title="Installing Cuckoo Sandbox on macOS" /><published>2020-03-22T04:20:00+00:00</published><updated>2020-03-22T04:20:00+00:00</updated><id>/blog/cuckoo-install</id><content type="html" xml:base="/blog/cuckoo-install">&lt;p&gt;We will cover only installing Cuckoos and not the configurating process since this is really the most difficult hurdle we have seen for new analyst.
 Please use &lt;a title=&quot;Cuckoos Project&quot; href=&quot;https://cuckoosandbox.org/&quot;&gt;Cuckoos Project &lt;/a&gt; for configuration recommendations.&lt;/p&gt;
 
 &lt;hr /&gt;
@@ -49,7 +49,7 @@ PYTHONWARNINGS=ignore:DEPRECATION pip install cuckoo
     …
     Building wheels for collected packages: unicorn, capstone
       Building wheel for unicorn (setup.py) ... error
-      &amp;lt;span style=&amp;quot;color:red&amp;quot;&amp;gt;ERROR: Command errored out with exit status 1:&amp;lt;/span&amp;gt;
+      &amp;lt;ERROR: Command errored out with exit status 1:
     …
     Running setup.py clean for unicorn
       Building wheel for capstone (setup.py) ... error
@@ -57,9 +57,8 @@ PYTHONWARNINGS=ignore:DEPRECATION pip install cuckoo
     Running setup.py clean for capstone
     Failed to build unicorn capstone
     …
-    &amp;lt;span style=&amp;quot;color:red; font-family:Georgia; font-size:2em;&amp;quot;&amp;gt;command output.&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+    command output.&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Roses are &lt;span style=&quot;color:red; font-family:Georgia; font-size:2em;&quot;&gt;red.&lt;/span&gt;
   
 &lt;h4 id=&quot;fix&quot;&gt;The fix&lt;/h4&gt;
 
