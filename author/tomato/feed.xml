@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="/blog/author/tomato/feed.xml" rel="self" type="application/atom+xml" />
   <link href="/blog/" rel="alternate" type="text/html" />
-  <updated>2020-03-27T08:21:34+00:00</updated>
+  <updated>2020-03-28T00:12:31+00:00</updated>
   <id>/blog/author/tomato/feed.xml</id>
 
   
@@ -93,24 +93,27 @@ $ cd venv
 
 
 &lt;p&gt;So, when you try to install Cuckoos from pip, as seen below, you will get an error on &lt;span style=&quot;color:red&quot;&gt;capstone&lt;/span&gt; and &lt;span style=&quot;color:red&quot;&gt;unicorn&lt;/span&gt; packages:&lt;/p&gt;
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;(venv)$ pip install -U cuckoo
+
+&lt;pre&gt;&lt;code&gt;
+(venv)$ pip install -U cuckoo
 PYTHONWARNINGS=ignore:DEPRECATION pip install cuckoo
     Processing
     …
-    Collecting django==1.8.4
-      Using cached Django-1.8.4-py2.py3-none-any.whl (6.2 MB)
-    …
-    Building wheels for collected packages: unicorn, capstone
-      Building wheel for unicorn (setup.py) ... error
-      ERROR: Command errored out with exit status 1:
-    …
-    Running setup.py clean for unicorn
-      Building wheel for capstone (setup.py) ... error
-    …
-    Running setup.py clean for capstone
-    Failed to build unicorn capstone
-    …
-    command output.&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+Collecting django==1.8.4
+  Using cached Django-1.8.4-py2.py3-none-any.whl (6.2 MB)
+…
+Building wheels for collected packages: unicorn, capstone
+  Building wheel for unicorn (setup.py) ... error
+  &lt;span style=&quot;color:red&quot;&gt;ERROR: Command errored out with exit status 1:&lt;/span&gt;
+…
+Running setup.py clean for unicorn
+  Building wheel for capstone (setup.py) ... error
+…
+Running setup.py clean for capstone
+Failed to build unicorn capstone
+…
+&lt;span style=&quot;color:red&quot;&gt;command output.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
 
   
 &lt;h4 id=&quot;fix&quot;&gt;The fix&lt;/h4&gt;
