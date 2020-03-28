@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/blog/" rel="alternate" type="text/html" /><updated>2020-03-28T00:12:31+00:00</updated><id>/blog/</id><title type="html">Blog</title><subtitle>A new beginning...</subtitle><entry><title type="html">Installing Cuckoo Sandbox on macOS</title><link href="/blog/cuckoo-install" rel="alternate" type="text/html" title="Installing Cuckoo Sandbox on macOS" /><published>2020-03-22T04:20:00+00:00</published><updated>2020-03-22T04:20:00+00:00</updated><id>/blog/cuckoo-install</id><content type="html" xml:base="/blog/cuckoo-install">&lt;p&gt;We will cover only installing Cuckoos and not the configurating process since this is really the most difficult hurdle we have seen for new analyst.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/blog/" rel="alternate" type="text/html" /><updated>2020-03-28T00:20:08+00:00</updated><id>/blog/</id><title type="html">Blog</title><subtitle>A new beginning...</subtitle><entry><title type="html">Installing Cuckoo Sandbox on macOS</title><link href="/blog/cuckoo-install" rel="alternate" type="text/html" title="Installing Cuckoo Sandbox on macOS" /><published>2020-03-22T04:20:00+00:00</published><updated>2020-03-22T04:20:00+00:00</updated><id>/blog/cuckoo-install</id><content type="html" xml:base="/blog/cuckoo-install">&lt;p&gt;We will cover only installing Cuckoos and not the configurating process since this is really the most difficult hurdle we have seen for new analyst.
 Please use &lt;a title=&quot;Cuckoos Project&quot; href=&quot;https://cuckoosandbox.org/&quot;&gt;Cuckoos Project &lt;/a&gt; for configuration recommendations.&lt;/p&gt;
 
 &lt;hr /&gt;
@@ -41,8 +41,7 @@ $ cd venv
 
 &lt;p&gt;So, when you try to install Cuckoos from pip, as seen below, you will get an error on &lt;span style=&quot;color:red&quot;&gt;capstone&lt;/span&gt; and &lt;span style=&quot;color:red&quot;&gt;unicorn&lt;/span&gt; packages:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;
-(venv)$ pip install -U cuckoo
+&lt;pre&gt;&lt;code&gt;(venv)$ pip install -U cuckoo
 PYTHONWARNINGS=ignore:DEPRECATION pip install cuckoo
     Processing
     …
@@ -59,14 +58,30 @@ Running setup.py clean for unicorn
 Running setup.py clean for capstone
 Failed to build unicorn capstone
 …
-&lt;span style=&quot;color:red&quot;&gt;command output.&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;span style=&quot;color:red&quot;&gt;command output.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 
   
 &lt;h4 id=&quot;fix&quot;&gt;The fix&lt;/h4&gt;
 
 &lt;p&gt;We will need to download Cuckoos, edit capstone package, and modify Cuckoo criteria list of the package&lt;/p&gt;
 &lt;p&gt; adding fix...&lt;/p&gt;
+
+
+#-----
+&lt;h5 id=&quot;fix&quot;&gt;Download cuckoo, since it will fail on venv pip install&lt;/h5&gt;
+&lt;pre&gt;&lt;code&gt;(venv)$ pip download cuckoo
+Collecting cuckoo
+  Using cached Cuckoo-2.0.7.tar.gz (8.6 MB)
+  Saved ./Cuckoo-2.0.7.tar.gz
+Collecting alembic==1.0.10
+  Using cached alembic-1.0.10.tar.gz (1.0 MB)
+  Saved ./alembic-1.0.10.tar.gz 
+…
+Collecting scandir; python_version &lt; &quot;3.5&quot;
+  Using cached scandir-1.10.0.tar.gz (33 kB)
+  Saved ./scandir-1.10.0.tar.gz
+Successfully downloaded cuckoo…&lt;/code&gt;&lt;/pre&gt;
+#-----
 
 &lt;hr /&gt;
 

@@ -215,8 +215,7 @@ $ cd venv
 
 <p>So, when you try to install Cuckoos from pip, as seen below, you will get an error on <span style="color:red">capstone</span> and <span style="color:red">unicorn</span> packages:</p>
 
-<pre><code>
-(venv)$ pip install -U cuckoo
+<pre><code>(venv)$ pip install -U cuckoo
 PYTHONWARNINGS=ignore:DEPRECATION pip install cuckoo
     Processing
     …
@@ -233,14 +232,30 @@ Running setup.py clean for unicorn
 Running setup.py clean for capstone
 Failed to build unicorn capstone
 …
-<span style="color:red">command output.</span>
-</code></pre>
+<span style="color:red">command output.</span></code></pre>
 
   
 <h4 id="fix">The fix</h4>
 
 <p>We will need to download Cuckoos, edit capstone package, and modify Cuckoo criteria list of the package</p>
 <p> adding fix...</p>
+
+
+#-----
+<h5 id="fix">Download cuckoo, since it will fail on venv pip install</h5>
+<pre><code>(venv)$ pip download cuckoo
+Collecting cuckoo
+  Using cached Cuckoo-2.0.7.tar.gz (8.6 MB)
+  Saved ./Cuckoo-2.0.7.tar.gz
+Collecting alembic==1.0.10
+  Using cached alembic-1.0.10.tar.gz (1.0 MB)
+  Saved ./alembic-1.0.10.tar.gz 
+…
+Collecting scandir; python_version < "3.5"
+  Using cached scandir-1.10.0.tar.gz (33 kB)
+  Saved ./scandir-1.10.0.tar.gz
+Successfully downloaded cuckoo…</code></pre>
+#-----
 
 <hr />
 
