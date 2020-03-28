@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="/blog/author/tomato/feed.xml" rel="self" type="application/atom+xml" />
   <link href="/blog/" rel="alternate" type="text/html" />
-  <updated>2020-03-28T00:20:08+00:00</updated>
+  <updated>2020-03-28T00:27:41+00:00</updated>
   <id>/blog/author/tomato/feed.xml</id>
 
   
@@ -78,18 +78,18 @@ Please use &lt;a title=&quot;Cuckoos Project&quot; href=&quot;https://cuckoosand
 &lt;pre&gt;$ sudo easy_install pip &lt;/pre&gt;
 
 
-&lt;h4 id=&quot;virtualenv&quot;&gt;Install virtualenv &amp; activate&lt;/h4&gt;
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;$ cd cuckoo_sanbox/
-$ virtualenv venv
+&lt;h4 id=&quot;virtualenv&quot;&gt;Install virtualenv &amp; activate:&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;$ &lt;strong&gt;cd cuckoo_sanbox/&lt;/strong&gt;
+$ &lt;strong&gt;virtualenv venv&lt;/strong&gt;
 virtualenv venv
 created virtual environment…
 …
   activators PythonActivator… 
 
 
-$ source ./venv/bin/activate
-$ cd venv
-(venv)$ pip install -U pip setuptools&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+$ &lt;strong&gt;source ./venv/bin/activate&lt;/strong&gt;
+$ &lt;strong&gt;cd venv&lt;/strong&gt;
+(venv)$ &lt;strong&gt;pip install -U pip setuptools&lt;/strong&gt;&lt;/pre&gt;
 
 
 &lt;p&gt;So, when you try to install Cuckoos from pip, as seen below, you will get an error on &lt;span style=&quot;color:red&quot;&gt;capstone&lt;/span&gt; and &lt;span style=&quot;color:red&quot;&gt;unicorn&lt;/span&gt; packages:&lt;/p&gt;
@@ -120,9 +120,9 @@ Failed to build unicorn capstone
 &lt;p&gt; adding fix...&lt;/p&gt;
 
 
-#-----
-&lt;h5 id=&quot;fix&quot;&gt;Download cuckoo, since it will fail on venv pip install&lt;/h5&gt;
-&lt;pre&gt;&lt;code&gt;(venv)$ pip download cuckoo
+
+&lt;h6 id=&quot;fix&quot;&gt;Download cuckoo, since it will fail on venv pip install:&lt;/h6&gt;
+&lt;pre&gt;&lt;code&gt;&lt;strong&gt;(venv)$ pip download cuckoo&lt;/strong&gt;
 Collecting cuckoo
   Using cached Cuckoo-2.0.7.tar.gz (8.6 MB)
   Saved ./Cuckoo-2.0.7.tar.gz
@@ -134,7 +134,14 @@ Collecting scandir; python_version &lt; &quot;3.5&quot;
   Using cached scandir-1.10.0.tar.gz (33 kB)
   Saved ./scandir-1.10.0.tar.gz
 Successfully downloaded cuckoo…&lt;/code&gt;&lt;/pre&gt;
-#-----
+
+&lt;h6 id=&quot;fix&quot;&gt;Take a look at packages:&lt;/h6&gt;
+&lt;pre&gt;&lt;code&gt;&lt;strong&gt;ls | xargs -n 1 | grep 'Cuck\|cap\|uni'&lt;/strong&gt;
+Cuckoo-2.0.7.tar.gz
+capstone-3.0.5rc2.tar.gz
+unicorn-1.0.1.tar.gz
+&lt;/pre&gt;
+
 
 &lt;hr /&gt;
 
