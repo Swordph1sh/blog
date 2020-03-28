@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="/blog/author/tomato/feed.xml" rel="self" type="application/atom+xml" />
   <link href="/blog/" rel="alternate" type="text/html" />
-  <updated>2020-03-28T01:17:53+00:00</updated>
+  <updated>2020-03-28T01:26:36+00:00</updated>
   <id>/blog/author/tomato/feed.xml</id>
 
   
@@ -119,7 +119,7 @@ Failed to build unicorn capstone
   
 &lt;h4 id=&quot;fix&quot;&gt;Tested and failed&lt;/h4&gt;
 
-&lt;p&gt;We will need to download Cuckoos, edit capstone package, and modify Cuckoo criteria list of the package&lt;/p&gt;
+&lt;p&gt;We will need to download Cuckoos, edit capstone package, and modify Cuckoo criteria list of the package, but lets walk through the steps&lt;/p&gt;
 
 
 
@@ -166,6 +166,61 @@ Building wheels for collected packages: Cuckoo, &lt;span style=&quot;color:red&q
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h4 id=&quot;fix&quot;&gt;The fix&lt;/h4&gt;
+
+&lt;p&gt;In order to fix issue, a few tweaks are needed on capstone.  Let’s make some edits on the packages but since clutter is messy lets isolate our work by creating a temp directory called Ein: &lt;/p&gt;
+
+
+&lt;p&gt;De-package and edits&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;
+pwd
+/Users/bebop/cuckoo_sanbox/
+
+mkdir Ein
+
+
+
+
+ls | xargs -n 1 | grep 'Cuck\|cap'
+Cuckoo-2.0.7.tar.gz
+capstone-3.0.5rc2.tar.gz
+
+tar -xf Cuckoo-2.0.7.tar.gz -C Ein/
+tar -xf capstone-3.0.5rc2.tar.gz -C Ein/
+
+ls Ein/ | xargs -n 1
+Cuckoo-2.0.7
+capstone-3.0.5rc2
+
+ls Ein/capstone-3.0.5rc2 | xargs -n 1 
+BUILDING.txt
+LICENSE.TXT
+Makefile
+PKG-INFO
+README.txt
+capstone
+setup.py
+src
+&lt;/code&gt;&lt;/pre&gt;
+
+
+Captone package edit
+&lt;pre&gt;&lt;code&gt;cd ~/cuckoo_sanbox/Ein/capstone-3.0.5rc2/src
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;grep -r i386 .    
+./src/make.sh:		export LIBARCHS=&quot;i386 x86_64&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+delete “i386” from line 63 in the make.sh file
+
+should look like below when edited:
+grep -r 'export LIBARCHS' ~/cuckoo_sanbox/Ein/capstone-3.0.5rc2/src
+		export LIBARCHS=&quot;x86_64&quot;
+
+verify, make sure you get no results then redo remove i386:
+&lt;pre&gt;&lt;code&gt;grep -r i386 .
+&lt;/code&gt;&lt;/pre&gt;
+
 
 
 &lt;hr /&gt;
