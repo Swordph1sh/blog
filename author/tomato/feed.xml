@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="/blog/author/tomato/feed.xml" rel="self" type="application/atom+xml" />
   <link href="/blog/" rel="alternate" type="text/html" />
-  <updated>2020-03-28T06:12:20+00:00</updated>
+  <updated>2020-03-28T06:19:22+00:00</updated>
   <id>/blog/author/tomato/feed.xml</id>
 
   
@@ -56,8 +56,8 @@ Please use the &lt;a title=&quot;Cuckoos Project&quot; href=&quot;https://cuckoo
 
 &lt;hr /&gt;
 &lt;h2 id&gt;Base macOS&lt;/h2&gt;
-&lt;p&gt;On a new macOS system there are a couple things we need to install, we will call section pre-install.  
-For manual install we will need multiple packages, some will have issues.  
+&lt;p&gt;On a new macOS system there are a couple things we need to install, we will call section pre-install.&lt;br&gt;
+For manual install we will need multiple packages, some will have issues.&lt;br&gt;
 After fixing them we will move onto the install and startup of Cuckoos.&lt;/p&gt;
 
 &lt;h3 id=&quot;Pre-install&quot;&gt;Pre-install collection&lt;/h3&gt;
@@ -122,12 +122,8 @@ Failed to build unicorn capstone
 &lt;span style=&quot;color:red&quot;&gt;command output.&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-  
 &lt;h4 id=&quot;fix&quot;&gt;Tested and failed&lt;/h4&gt;
-
 &lt;p&gt;We will need to download Cuckoos, edit capstone package, and modify Cuckoo criteria list of the package, but lets walk through the steps&lt;/p&gt;
-
-
 
 &lt;h6 id=&quot;fix&quot;&gt;Download cuckoo, since it will fail on venv pip install:&lt;/h6&gt;
 
@@ -173,7 +169,7 @@ Building wheels for collected packages: Cuckoo, &lt;span style=&quot;color:red&q
 &lt;h4 id=&quot;fix&quot;&gt;The fix&lt;/h4&gt;
 
 &lt;p&gt;In order to fix issue, a few tweaks are needed on capstone.  Let’s make some edits on the packages but since clutter is messy lets isolate our work by creating a temp directory called &lt;strong&gt;Ein&lt;bold&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;De-package and edits:&lt;p&gt;
+&lt;strong&gt;De-package and edits:&lt;/strong&gt;
 &lt;pre&gt;&lt;code&gt;(venv)$ pwd
 /Users/bebop/cuckoo_sanbox/
 
@@ -210,14 +206,13 @@ src
 ./src/make.sh:		export LIBARCHS=&quot;i386 x86_64&quot;
 &lt;/code&gt;&lt;/pre&gt;
 
-delete “i386” from line 63 in the make.sh file
-
-should look like below when edited:
+&lt;p&gt;delete “i386” from line 63 in the make.sh file,&lt;br&gt;
+should look like below when edited:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;(venv)$grep -r 'export LIBARCHS' ~/cuckoo_sanbox/Ein/capstone-3.0.5rc2/src
 		export LIBARCHS=&quot;x86_64&quot;
 &lt;/code&gt;&lt;/pre&gt;
 
-Verify, make sure you get no results then redo remove i386:
+&lt;p&gt;Verify, make sure you get no results then redo remove i386:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;(venv)$ grep -r i386 .
 &lt;/code&gt;&lt;/pre&gt;
 
