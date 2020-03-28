@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/blog/" rel="alternate" type="text/html" /><updated>2020-03-28T00:43:25+00:00</updated><id>/blog/</id><title type="html">Blog</title><subtitle>A new beginning...</subtitle><entry><title type="html">Installing Cuckoo Sandbox on macOS</title><link href="/blog/cuckoo-install" rel="alternate" type="text/html" title="Installing Cuckoo Sandbox on macOS" /><published>2020-03-22T04:20:00+00:00</published><updated>2020-03-22T04:20:00+00:00</updated><id>/blog/cuckoo-install</id><content type="html" xml:base="/blog/cuckoo-install">&lt;p&gt;We will cover only installing Cuckoos and not the configurating process since this is really the most difficult hurdle we have seen for new analyst.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/blog/" rel="alternate" type="text/html" /><updated>2020-03-28T00:44:12+00:00</updated><id>/blog/</id><title type="html">Blog</title><subtitle>A new beginning...</subtitle><entry><title type="html">Installing Cuckoo Sandbox on macOS</title><link href="/blog/cuckoo-install" rel="alternate" type="text/html" title="Installing Cuckoo Sandbox on macOS" /><published>2020-03-22T04:20:00+00:00</published><updated>2020-03-22T04:20:00+00:00</updated><id>/blog/cuckoo-install</id><content type="html" xml:base="/blog/cuckoo-install">&lt;p&gt;We will cover only installing Cuckoos and not the configurating process since this is really the most difficult hurdle we have seen for new analyst.
 Please use &lt;a title=&quot;Cuckoos Project&quot; href=&quot;https://cuckoosandbox.org/&quot;&gt;Cuckoos Project &lt;/a&gt; for configuration recommendations.&lt;/p&gt;
 
 &lt;hr /&gt;
@@ -83,7 +83,8 @@ Collecting alembic==1.0.10
 Collecting scandir; python_version &lt; &quot;3.5&quot;
   Using cached scandir-1.10.0.tar.gz (33 kB)
   Saved ./scandir-1.10.0.tar.gz
-Successfully downloaded cuckoo…&lt;/code&gt;&lt;/pre&gt;
+Successfully downloaded cuckoo…
+&lt;/pre&gt;
 
 &lt;h6 id=&quot;fix&quot;&gt;Take a look at packages:&lt;/h6&gt;
 &lt;pre&gt;&lt;code&gt;&lt;strong&gt;ls | xargs -n 1 | grep 'Cuck\|cap\|uni'&lt;/strong&gt;
