@@ -200,7 +200,7 @@ Please use <a title="Cuckoos Project" href="https://cuckoosandbox.org/">Cuckoos 
 </code></pre>
 
 
-<h6 id="heading6">virtualenv">Install virtualenv & activate:</h6>
+<h6 id="heading6">Install virtualenv & activate:</h6>
 <pre><code>$ cd cuckoo_sanbox/
 $ virtualenv venv
 virtualenv venv
@@ -288,7 +288,7 @@ Building wheels for collected packages: Cuckoo, <span style="color:red">unicorn<
 <h4 id="fix">The fix</h4>
 
 <p>In order to fix issue, a few tweaks are needed on capstone.  Let’s make some edits on the packages but since clutter is messy lets isolate our work by creating a temp directory called <strong>Ein<bold></strong></p>
-De-package and edits:
+<p>De-package and edits:<p>
 <pre><code>(venv)$ pwd
 /Users/bebop/cuckoo_sanbox/
 
@@ -403,7 +403,7 @@ Packages needed:
         "roach>=0.1.2, <0.2",
         "sflock>=0.3.10, <0.4",
         "sqlalchemy==1.3.3",
-        <span style="color:red">"unicorn==1.0.2rc1",</p>
+        <span style="color:red">"unicorn==1.0.2rc1",</span>
         "wakeonlan==0.2.2",
         "yara-python==3.6.3",
     ],

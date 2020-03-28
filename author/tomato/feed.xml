@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="/blog/author/tomato/feed.xml" rel="self" type="application/atom+xml" />
   <link href="/blog/" rel="alternate" type="text/html" />
-  <updated>2020-03-28T02:00:25+00:00</updated>
+  <updated>2020-03-28T02:05:50+00:00</updated>
   <id>/blog/author/tomato/feed.xml</id>
 
   
@@ -79,7 +79,7 @@ Please use &lt;a title=&quot;Cuckoos Project&quot; href=&quot;https://cuckoosand
 &lt;/code&gt;&lt;/pre&gt;
 
 
-&lt;h6 id=&quot;heading6&quot;&gt;virtualenv&quot;&gt;Install virtualenv &amp; activate:&lt;/h6&gt;
+&lt;h6 id=&quot;heading6&quot;&gt;Install virtualenv &amp; activate:&lt;/h6&gt;
 &lt;pre&gt;&lt;code&gt;$ cd cuckoo_sanbox/
 $ virtualenv venv
 virtualenv venv
@@ -167,7 +167,7 @@ Building wheels for collected packages: Cuckoo, &lt;span style=&quot;color:red&q
 &lt;h4 id=&quot;fix&quot;&gt;The fix&lt;/h4&gt;
 
 &lt;p&gt;In order to fix issue, a few tweaks are needed on capstone.  Let’s make some edits on the packages but since clutter is messy lets isolate our work by creating a temp directory called &lt;strong&gt;Ein&lt;bold&gt;&lt;/strong&gt;&lt;/p&gt;
-De-package and edits:
+&lt;p&gt;De-package and edits:&lt;p&gt;
 &lt;pre&gt;&lt;code&gt;(venv)$ pwd
 /Users/bebop/cuckoo_sanbox/
 
@@ -282,7 +282,7 @@ Packages needed:
         &quot;roach&gt;=0.1.2, &lt;0.2&quot;,
         &quot;sflock&gt;=0.3.10, &lt;0.4&quot;,
         &quot;sqlalchemy==1.3.3&quot;,
-        &lt;span style=&quot;color:red&quot;&gt;&quot;unicorn==1.0.2rc1&quot;,&lt;/p&gt;
+        &lt;span style=&quot;color:red&quot;&gt;&quot;unicorn==1.0.2rc1&quot;,&lt;/span&gt;
         &quot;wakeonlan==0.2.2&quot;,
         &quot;yara-python==3.6.3&quot;,
     ],
