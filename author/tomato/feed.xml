@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="/blog/author/tomato/feed.xml" rel="self" type="application/atom+xml" />
   <link href="/blog/" rel="alternate" type="text/html" />
-  <updated>2020-03-28T01:36:48+00:00</updated>
+  <updated>2020-03-28T01:48:46+00:00</updated>
   <id>/blog/author/tomato/feed.xml</id>
 
   
@@ -74,12 +74,12 @@ Please use &lt;a title=&quot;Cuckoos Project&quot; href=&quot;https://cuckoosand
 
 &lt;hr /&gt;
 
-&lt;h4 id=&quot;pip&quot;&gt;Install pip&lt;/h4&gt;
+&lt;h6 id=&quot;heading6&quot;&gt;Install pip&lt;/h6&gt;
 &lt;pre&gt;&lt;code&gt;$ sudo easy_install pip 
 &lt;/code&gt;&lt;/pre&gt;
 
 
-&lt;h4 id=&quot;virtualenv&quot;&gt;Install virtualenv &amp; activate:&lt;/h4&gt;
+&lt;h6 id=&quot;heading6&quot;&gt;virtualenv&quot;&gt;Install virtualenv &amp; activate:&lt;/h6&gt;
 &lt;pre&gt;&lt;code&gt;$ cd cuckoo_sanbox/
 $ virtualenv venv
 virtualenv venv
@@ -142,8 +142,7 @@ Successfully downloaded cuckoo…
 
 
 &lt;h6 id=&quot;fix&quot;&gt;Take a look at packages:&lt;/h6&gt;
-&lt;pre&gt;&lt;code&gt;
-ls | xargs -n 1 | grep 'Cuck\|cap\|uni'
+&lt;pre&gt;&lt;code&gt;(venv)$ ls | xargs -n 1 | grep 'Cuck\|cap\|uni'
 Cuckoo-2.0.7.tar.gz
 capstone-3.0.5rc2.tar.gz
 unicorn-1.0.1.tar.gz
@@ -151,7 +150,7 @@ unicorn-1.0.1.tar.gz
 
 
 &lt;p&gt;Try install and it will fail on some packages, particularly on unicorn and captone:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;pip install Cuckoo-2.0.7.tar.gz
+&lt;pre&gt;&lt;code&gt;(venv)$ pip install Cuckoo-2.0.7.tar.gz
 …
 …
 Building wheels for collected packages: Cuckoo, &lt;span style=&quot;color:red&quot;&gt;unicorn&lt;/span&gt;, &lt;span style=&quot;color:red&quot;&gt;capstone&lt;/span&gt;
@@ -167,31 +166,27 @@ Building wheels for collected packages: Cuckoo, &lt;span style=&quot;color:red&q
 
 &lt;h4 id=&quot;fix&quot;&gt;The fix&lt;/h4&gt;
 
-&lt;p&gt;In order to fix issue, a few tweaks are needed on capstone.  Let’s make some edits on the packages but since clutter is messy lets isolate our work by creating a temp directory called Ein: &lt;/p&gt;
+&lt;p&gt;In order to fix issue, a few tweaks are needed on capstone.  Let’s make some edits on the packages but since clutter is messy lets isolate our work by creating a temp directory called &lt;strong&gt;Ein&lt;bold&gt;&lt;/strong&gt;
 
 
-&lt;p&gt;De-package and edits&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;
-pwd
+De-package and edits:
+&lt;pre&gt;&lt;code&gt;(venv)$ pwd
 /Users/bebop/cuckoo_sanbox/
 
-mkdir Ein
+(venv)$ mkdir Ein
 
-
-
-
-ls | xargs -n 1 | grep 'Cuck\|cap'
+(venv)$ ls | xargs -n 1 | grep 'Cuck\|cap'
 Cuckoo-2.0.7.tar.gz
 capstone-3.0.5rc2.tar.gz
 
-tar -xf Cuckoo-2.0.7.tar.gz -C Ein/
-tar -xf capstone-3.0.5rc2.tar.gz -C Ein/
+(venv)$ tar -xf Cuckoo-2.0.7.tar.gz -C Ein/
+(venv)$ tar -xf capstone-3.0.5rc2.tar.gz -C Ein/
 
-ls Ein/ | xargs -n 1
+(venv)$ ls Ein/ | xargs -n 1
 Cuckoo-2.0.7
 capstone-3.0.5rc2
 
-ls Ein/capstone-3.0.5rc2 | xargs -n 1 
+(venv)$ ls Ein/capstone-3.0.5rc2 | xargs -n 1 
 BUILDING.txt
 LICENSE.TXT
 Makefile
@@ -204,21 +199,22 @@ src
 
 
 Captone package edit
-&lt;pre&gt;&lt;code&gt;cd ~/cuckoo_sanbox/Ein/capstone-3.0.5rc2/src
+&lt;pre&gt;&lt;code&gt;(venv)$ cd ~/cuckoo_sanbox/Ein/capstone-3.0.5rc2/src
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;pre&gt;&lt;code&gt;grep -r i386 .    
+&lt;pre&gt;&lt;code&gt;(venv)$ grep -r i386 .    
 ./src/make.sh:		export LIBARCHS=&quot;i386 x86_64&quot;
 &lt;/code&gt;&lt;/pre&gt;
 
 delete “i386” from line 63 in the make.sh file
 
 should look like below when edited:
-grep -r 'export LIBARCHS' ~/cuckoo_sanbox/Ein/capstone-3.0.5rc2/src
+&lt;pre&gt;&lt;code&gt;(venv)$grep -r 'export LIBARCHS' ~/cuckoo_sanbox/Ein/capstone-3.0.5rc2/src
 		export LIBARCHS=&quot;x86_64&quot;
+&lt;/code&gt;&lt;/pre&gt;
 
-verify, make sure you get no results then redo remove i386:
-&lt;pre&gt;&lt;code&gt;grep -r i386 .
+Verify, make sure you get no results then redo remove i386:
+&lt;pre&gt;&lt;code&gt;(venv)$ grep -r i386 .
 &lt;/code&gt;&lt;/pre&gt;
 
 
@@ -253,10 +249,10 @@ Successfully installed python-magic-0.4.12
 
 
 &lt;h6 id=&quot;heading6&quot;&gt;Finally, install Cuckoos&lt;/h6&gt;
-&lt;pre&gt;&lt;code&gt;cd ~/cuckoo_sanbox/
+&lt;pre&gt;&lt;code&gt;(venv)$ cd ~/cuckoo_sanbox/
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;pre&gt;&lt;code&gt;pip install Ein/Cuckoo-2.0.7            
+&lt;pre&gt;&lt;code&gt;(venv)$ pip install Ein/Cuckoo-2.0.7            
 Processing ./Ein/Cuckoo-2.0.7
 Requirement already satisfied: alembic==1.0.10 in ./venv/lib/python2.7/site-packages (from Cuckoo==2.0.7) (1.0.10)
 Requirement already satisfied: androguard==3.0.1 in ./venv/lib/python2.7/site-packages (from Cuckoo==2.0.7) (3.0.1)
