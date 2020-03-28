@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/blog/" rel="alternate" type="text/html" /><updated>2020-03-28T06:40:22+00:00</updated><id>/blog/</id><title type="html">Blog</title><subtitle>A new beginning...</subtitle><entry><title type="html">Installing Cuckoo Sandbox on macOS</title><link href="/blog/cuckoo-install" rel="alternate" type="text/html" title="Installing Cuckoo Sandbox on macOS" /><published>2020-03-22T04:20:00+00:00</published><updated>2020-03-22T04:20:00+00:00</updated><id>/blog/cuckoo-install</id><content type="html" xml:base="/blog/cuckoo-install">&lt;p&gt;In this section we will cover only installing Cuckoos and not the full configuration process, since this is really the most difficult hurdle I have been hearing from Security Analyst.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/blog/" rel="alternate" type="text/html" /><updated>2020-03-28T06:44:14+00:00</updated><id>/blog/</id><title type="html">Blog</title><subtitle>A new beginning...</subtitle><entry><title type="html">Installing Cuckoo Sandbox on macOS</title><link href="/blog/cuckoo-install" rel="alternate" type="text/html" title="Installing Cuckoo Sandbox on macOS" /><published>2020-03-22T04:20:00+00:00</published><updated>2020-03-22T04:20:00+00:00</updated><id>/blog/cuckoo-install</id><content type="html" xml:base="/blog/cuckoo-install">&lt;p&gt;In this section we will cover only installing Cuckoos and not the full configuration process, since this is really the most difficult hurdle I have been hearing from Security Analyst.
 Please use the &lt;a title=&quot;Cuckoos Project&quot; href=&quot;https://cuckoosandbox.org/&quot;&gt;Cuckoos Project &lt;/a&gt; for recommendations in configuring Cuckoos Sandbox.&lt;/p&gt;
 
 &lt;hr /&gt;
@@ -119,7 +119,7 @@ Building wheels for collected packages: Cuckoo, &lt;span style=&quot;color:red&q
 &lt;h4 id=&quot;fix&quot;&gt;The fix&lt;/h4&gt;
 
 &lt;p&gt;In order to fix issue, a few tweaks are needed on capstone.  Let’s make some edits on the packages but since clutter is messy lets isolate our work by creating a temp directory called &lt;strong&gt;Ein&lt;bold&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;strong&gt;De-package and edits:&lt;/strong&gt;
+&lt;h6 id&gt;De-package and edits:&lt;/h6&gt;
 &lt;pre&gt;&lt;code&gt;(venv)$ pwd
 /Users/bebop/cuckoo_sanbox/
 
