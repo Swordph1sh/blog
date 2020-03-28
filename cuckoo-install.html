@@ -239,7 +239,7 @@ Failed to build unicorn capstone
 </code></pre>
 
   
-<h4 id="fix">The fix</h4>
+<h4 id="fix">Tested and failed</h4>
 
 <p>We will need to download Cuckoos, edit capstone package, and modify Cuckoo criteria list of the package</p>
 <p> adding fix...</p>
@@ -271,6 +271,24 @@ Cuckoo-2.0.7.tar.gz
 capstone-3.0.5rc2.tar.gz
 unicorn-1.0.1.tar.gz
 </code></pre>
+
+
+<p>Try install and it will fail on some packages, particularly on unicorn and captone:</p>
+<pre><code>pip install Cuckoo-2.0.7.tar.gz
+…
+…
+Building wheels for collected packages: Cuckoo, <span style="color:red">unicorn</span>, <span style="color:red">capstone</span>
+  Building wheel for Cuckoo (setup.py) ... done
+  Created wheel for Cuckoo: filename=Cuckoo-2.0.7-py2-none-any.whl size=8895737 sha256=b3f7dc2782e96e126070bd662901c3d4cfeff51a717fe7ab6ebc626cc62927f5
+  Stored in directory: /Users/bebop/Library/Caches/pip/wheels/ee/5c/8e/d734a9fc27f0c5a9ebc4b0f96a33f84d4f7b9d2e173ba18b8a
+  Building wheel for unicorn (setup.py) ... error
+  <span style="color:red">ERROR: Command errored out with exit status 1:
+   command: /Users/bebop/cuckoo_sanbox/venv/bin/python -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/private/var/folders/zc/bxw1rn3x75d8p4yqgy7ksy640000gn/T/pip-install-TFjH5H/unicorn/setup.py'"'"'; __file__='"'"'/private/var/folders/zc/bxw1rn3x75d8p4yqgy7ksy640000gn/T/pip-install-TFjH5H/unicorn/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' bdist_wheel -d /private/var/folders/zc/bxw1rn3x75d8p4yqgy7ksy640000gn/T/pip-wheel-192nun
+       cwd: /private/var/folders/zc/bxw1rn3x75d8p4yqgy7ksy640000gn/T/pip-install-TFjH5H/unicorn/</span>
+…
+</code></pre>
+
+<h4 id="fix">The fix</h4>
 
 
 <hr />

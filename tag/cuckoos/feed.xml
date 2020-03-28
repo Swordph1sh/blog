@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="/blog/tag/cuckoos/feed.xml" rel="self" type="application/atom+xml" />
   <link href="/blog/" rel="alternate" type="text/html" />
-  <updated>2020-03-28T01:08:09+00:00</updated>
+  <updated>2020-03-28T01:11:34+00:00</updated>
   <id>/blog/tag/cuckoos/feed.xml</id>
 
   
@@ -118,7 +118,7 @@ Failed to build unicorn capstone
 &lt;/code&gt;&lt;/pre&gt;
 
   
-&lt;h4 id=&quot;fix&quot;&gt;The fix&lt;/h4&gt;
+&lt;h4 id=&quot;fix&quot;&gt;Tested and failed&lt;/h4&gt;
 
 &lt;p&gt;We will need to download Cuckoos, edit capstone package, and modify Cuckoo criteria list of the package&lt;/p&gt;
 &lt;p&gt; adding fix...&lt;/p&gt;
@@ -150,6 +150,24 @@ Cuckoo-2.0.7.tar.gz
 capstone-3.0.5rc2.tar.gz
 unicorn-1.0.1.tar.gz
 &lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;Try install and it will fail on some packages, particularly on unicorn and captone:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pip install Cuckoo-2.0.7.tar.gz
+…
+…
+Building wheels for collected packages: Cuckoo, &lt;span style=&quot;color:red&quot;&gt;unicorn&lt;/span&gt;, &lt;span style=&quot;color:red&quot;&gt;capstone&lt;/span&gt;
+  Building wheel for Cuckoo (setup.py) ... done
+  Created wheel for Cuckoo: filename=Cuckoo-2.0.7-py2-none-any.whl size=8895737 sha256=b3f7dc2782e96e126070bd662901c3d4cfeff51a717fe7ab6ebc626cc62927f5
+  Stored in directory: /Users/bebop/Library/Caches/pip/wheels/ee/5c/8e/d734a9fc27f0c5a9ebc4b0f96a33f84d4f7b9d2e173ba18b8a
+  Building wheel for unicorn (setup.py) ... error
+  &lt;span style=&quot;color:red&quot;&gt;ERROR: Command errored out with exit status 1:
+   command: /Users/bebop/cuckoo_sanbox/venv/bin/python -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '&quot;'&quot;'/private/var/folders/zc/bxw1rn3x75d8p4yqgy7ksy640000gn/T/pip-install-TFjH5H/unicorn/setup.py'&quot;'&quot;'; __file__='&quot;'&quot;'/private/var/folders/zc/bxw1rn3x75d8p4yqgy7ksy640000gn/T/pip-install-TFjH5H/unicorn/setup.py'&quot;'&quot;';f=getattr(tokenize, '&quot;'&quot;'open'&quot;'&quot;', open)(__file__);code=f.read().replace('&quot;'&quot;'\r\n'&quot;'&quot;', '&quot;'&quot;'\n'&quot;'&quot;');f.close();exec(compile(code, __file__, '&quot;'&quot;'exec'&quot;'&quot;'))' bdist_wheel -d /private/var/folders/zc/bxw1rn3x75d8p4yqgy7ksy640000gn/T/pip-wheel-192nun
+       cwd: /private/var/folders/zc/bxw1rn3x75d8p4yqgy7ksy640000gn/T/pip-install-TFjH5H/unicorn/&lt;/span&gt;
+…
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;fix&quot;&gt;The fix&lt;/h4&gt;
 
 
 &lt;hr /&gt;
