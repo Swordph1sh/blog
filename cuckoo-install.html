@@ -196,7 +196,8 @@ Please use <a title="Cuckoos Project" href="https://cuckoosandbox.org/">Cuckoos 
 <hr />
 
 <h4 id="pip">Install pip</h4>
-<pre><code>$ sudo easy_install pip </pre>
+<pre><code>$ sudo easy_install pip 
+</code></pre>
 
 
 <h4 id="virtualenv">Install virtualenv & activate:</h4>
@@ -211,7 +212,7 @@ created virtual environment…
 $ source ./venv/bin/activate
 $ cd venv
 (venv)$ pip install -U pip setuptools
-</pre>
+</code></pre>
 
 
 <p>So, when you try to install Cuckoos from pip, as seen below, you will get an error on <span style="color:red">capstone</span> and <span style="color:red">unicorn</span> packages:</p>
@@ -235,7 +236,7 @@ Running setup.py clean for capstone
 Failed to build unicorn capstone
 …
 <span style="color:red">command output.</span>
-</pre>
+</code></pre>
 
   
 <h4 id="fix">The fix</h4>
@@ -246,7 +247,9 @@ Failed to build unicorn capstone
 
 
 <h6 id="fix">Download cuckoo, since it will fail on venv pip install:</h6>
-<pre><code>(venv)$ pip download cuckoo
+
+<pre><code>
+(venv)$ pip download cuckoo
 Collecting cuckoo
   Using cached Cuckoo-2.0.7.tar.gz (8.6 MB)
   Saved ./Cuckoo-2.0.7.tar.gz
@@ -254,18 +257,20 @@ Collecting alembic==1.0.10
   Using cached alembic-1.0.10.tar.gz (1.0 MB)
   Saved ./alembic-1.0.10.tar.gz 
 …
-Collecting scandir; python_version < "3.5"
+Collecting scandir; python_version &lt; "3.5"
   Using cached scandir-1.10.0.tar.gz (33 kB)
   Saved ./scandir-1.10.0.tar.gz
 Successfully downloaded cuckoo…
-</pre>
+</code></pre>
+
 
 <h6 id="fix">Take a look at packages:</h6>
-<pre><code>ls | xargs -n 1 | grep 'Cuck\|cap\|uni'
+<pre><code>
+ls | xargs -n 1 | grep 'Cuck\|cap\|uni'
 Cuckoo-2.0.7.tar.gz
 capstone-3.0.5rc2.tar.gz
 unicorn-1.0.1.tar.gz
-</pre>
+</code></pre>
 
 
 <hr />
