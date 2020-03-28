@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="/blog/author/tomato/feed.xml" rel="self" type="application/atom+xml" />
   <link href="/blog/" rel="alternate" type="text/html" />
-  <updated>2020-03-28T06:19:22+00:00</updated>
+  <updated>2020-03-28T06:23:41+00:00</updated>
   <id>/blog/author/tomato/feed.xml</id>
 
   
@@ -51,7 +51,7 @@
       <published>2020-03-22T04:20:00+00:00</published>
       <updated>2020-03-22T04:20:00+00:00</updated>
       <id>/blog/cuckoo-install</id>
-      <content type="html" xml:base="/blog/cuckoo-install">&lt;p&gt;In this section we will cover only installing Cuckoos and not the full configuration process, since this is really the most difficult hurdle I have been hearing for Security Analyst.
+      <content type="html" xml:base="/blog/cuckoo-install">&lt;p&gt;In this section we will cover only installing Cuckoos and not the full configuration process, since this is really the most difficult hurdle I have been hearing from Security Analyst.
 Please use the &lt;a title=&quot;Cuckoos Project&quot; href=&quot;https://cuckoosandbox.org/&quot;&gt;Cuckoos Project &lt;/a&gt; for recommendations in configuring Cuckoos Sandbox.&lt;/p&gt;
 
 &lt;hr /&gt;
@@ -78,14 +78,15 @@ After fixing them we will move onto the install and startup of Cuckoos.&lt;/p&gt
 &lt;ul&gt;
 &lt;li&gt;Test&lt;/li&gt;
 &lt;/ul&gt;
+
 &lt;hr /&gt;
 
-&lt;strong&gt;Install pip&lt;/h6&gt;
+&lt;strong&gt;Install pip&lt;/strong&gt;
 &lt;pre&gt;&lt;code&gt;$ sudo easy_install pip 
 &lt;/code&gt;&lt;/pre&gt;
 
 
-&lt;h6 id=&quot;heading6&quot;&gt;Install virtualenv &amp; activate:&lt;/h6&gt;
+&lt;strong&gt;Install virtualenv &amp; activate:&lt;/strong&gt;
 &lt;pre&gt;&lt;code&gt;$ cd cuckoo_sanbox/
 $ virtualenv venv
 virtualenv venv
@@ -436,7 +437,7 @@ start Cuckoo again (by running `cuckoo` or `cuckoo -d`).
       
 
       
-        <summary type="html">In this section we will cover only installing Cuckoos and not the full configuration process, since this is really the most difficult hurdle I have been hearing for Security Analyst. Please use the Cuckoos Project for recommendations in configuring Cuckoos Sandbox.</summary>
+        <summary type="html">In this section we will cover only installing Cuckoos and not the full configuration process, since this is really the most difficult hurdle I have been hearing from Security Analyst. Please use the Cuckoos Project for recommendations in configuring Cuckoos Sandbox.</summary>
       
 
       
