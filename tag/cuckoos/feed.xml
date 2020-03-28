@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="/blog/tag/cuckoos/feed.xml" rel="self" type="application/atom+xml" />
   <link href="/blog/" rel="alternate" type="text/html" />
-  <updated>2020-03-28T00:47:54+00:00</updated>
+  <updated>2020-03-28T00:48:47+00:00</updated>
   <id>/blog/tag/cuckoos/feed.xml</id>
 
   
@@ -125,7 +125,7 @@ Failed to build unicorn capstone
 
 
 &lt;h6 id=&quot;fix&quot;&gt;Download cuckoo, since it will fail on venv pip install:&lt;/h6&gt;
-&lt;pre&gt;&lt;code&gt;&lt;strong&gt;(venv)$ pip download cuckoo&lt;/strong&gt;
+&lt;pre&gt;&lt;code&gt;(venv)$ pip download cuckoo
 Collecting cuckoo
   Using cached Cuckoo-2.0.7.tar.gz (8.6 MB)
   Saved ./Cuckoo-2.0.7.tar.gz
@@ -140,7 +140,7 @@ Successfully downloaded cuckoo…
 &lt;/pre&gt;
 
 &lt;h6 id=&quot;fix&quot;&gt;Take a look at packages:&lt;/h6&gt;
-&lt;pre&gt;&lt;code&gt;&lt;strong&gt;ls | xargs -n 1 | grep 'Cuck\|cap\|uni'&lt;/strong&gt;
+&lt;pre&gt;&lt;code&gt;ls | xargs -n 1 | grep 'Cuck\|cap\|uni'
 Cuckoo-2.0.7.tar.gz
 capstone-3.0.5rc2.tar.gz
 unicorn-1.0.1.tar.gz

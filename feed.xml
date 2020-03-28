@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/blog/" rel="alternate" type="text/html" /><updated>2020-03-28T00:47:54+00:00</updated><id>/blog/</id><title type="html">Blog</title><subtitle>A new beginning...</subtitle><entry><title type="html">Installing Cuckoo Sandbox on macOS</title><link href="/blog/cuckoo-install" rel="alternate" type="text/html" title="Installing Cuckoo Sandbox on macOS" /><published>2020-03-22T04:20:00+00:00</published><updated>2020-03-22T04:20:00+00:00</updated><id>/blog/cuckoo-install</id><content type="html" xml:base="/blog/cuckoo-install">&lt;p&gt;We will cover only installing Cuckoos and not the configurating process since this is really the most difficult hurdle we have seen for new analyst.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/blog/" rel="alternate" type="text/html" /><updated>2020-03-28T00:48:47+00:00</updated><id>/blog/</id><title type="html">Blog</title><subtitle>A new beginning...</subtitle><entry><title type="html">Installing Cuckoo Sandbox on macOS</title><link href="/blog/cuckoo-install" rel="alternate" type="text/html" title="Installing Cuckoo Sandbox on macOS" /><published>2020-03-22T04:20:00+00:00</published><updated>2020-03-22T04:20:00+00:00</updated><id>/blog/cuckoo-install</id><content type="html" xml:base="/blog/cuckoo-install">&lt;p&gt;We will cover only installing Cuckoos and not the configurating process since this is really the most difficult hurdle we have seen for new analyst.
 Please use &lt;a title=&quot;Cuckoos Project&quot; href=&quot;https://cuckoosandbox.org/&quot;&gt;Cuckoos Project &lt;/a&gt; for configuration recommendations.&lt;/p&gt;
 
 &lt;hr /&gt;
@@ -72,7 +72,7 @@ Failed to build unicorn capstone
 
 
 &lt;h6 id=&quot;fix&quot;&gt;Download cuckoo, since it will fail on venv pip install:&lt;/h6&gt;
-&lt;pre&gt;&lt;code&gt;&lt;strong&gt;(venv)$ pip download cuckoo&lt;/strong&gt;
+&lt;pre&gt;&lt;code&gt;(venv)$ pip download cuckoo
 Collecting cuckoo
   Using cached Cuckoo-2.0.7.tar.gz (8.6 MB)
   Saved ./Cuckoo-2.0.7.tar.gz
@@ -87,7 +87,7 @@ Successfully downloaded cuckoo…
 &lt;/pre&gt;
 
 &lt;h6 id=&quot;fix&quot;&gt;Take a look at packages:&lt;/h6&gt;
-&lt;pre&gt;&lt;code&gt;&lt;strong&gt;ls | xargs -n 1 | grep 'Cuck\|cap\|uni'&lt;/strong&gt;
+&lt;pre&gt;&lt;code&gt;ls | xargs -n 1 | grep 'Cuck\|cap\|uni'
 Cuckoo-2.0.7.tar.gz
 capstone-3.0.5rc2.tar.gz
 unicorn-1.0.1.tar.gz
