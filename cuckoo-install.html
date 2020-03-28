@@ -353,7 +353,7 @@ Successfully installed capstone-3.0.5rc2
 </code></pre>
 
 
-<p>Note that if you have any issues with libmagic (python-libmagic), install version 0.4.12</p>
+<p>#Note that if you have any issues with libmagic (python-libmagic), install version 0.4.12</p>
 <pre><code>
 (venv)$ pip uninstall python-libmagic
 Found existing installation: python-libmagic 0.4.0
@@ -371,10 +371,8 @@ Successfully installed python-magic-0.4.12
 </code></pre>
 
 
-
-
-<p>We will just add a modify the package version for unicorn, <strong>dont forget to modify setup file!!!</strong>
-	Packages needed:</p>
+<p>We will just modify the package version for unicorn, <strong>dont forget to modify setup file!!!</strong></p>
+<h6 id>Packages needed:</h6>
 <pre><code>(venv)$ grep -A34 'install_requires' Ein/Cuckoo-2.0.7/setup.py
     install_requires=[
         "alembic==1.0.10",

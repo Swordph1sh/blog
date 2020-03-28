@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="/blog/tag/cuckoos/feed.xml" rel="self" type="application/atom+xml" />
   <link href="/blog/" rel="alternate" type="text/html" />
-  <updated>2020-03-28T06:54:54+00:00</updated>
+  <updated>2020-03-28T06:58:48+00:00</updated>
   <id>/blog/tag/cuckoos/feed.xml</id>
 
   
@@ -232,7 +232,7 @@ Successfully installed capstone-3.0.5rc2
 &lt;/code&gt;&lt;/pre&gt;
 
 
-&lt;p&gt;Note that if you have any issues with libmagic (python-libmagic), install version 0.4.12&lt;/p&gt;
+&lt;p&gt;#Note that if you have any issues with libmagic (python-libmagic), install version 0.4.12&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;
 (venv)$ pip uninstall python-libmagic
 Found existing installation: python-libmagic 0.4.0
@@ -250,10 +250,8 @@ Successfully installed python-magic-0.4.12
 &lt;/code&gt;&lt;/pre&gt;
 
 
-
-
-&lt;p&gt;We will just add a modify the package version for unicorn, &lt;strong&gt;dont forget to modify setup file!!!&lt;/strong&gt;
-	Packages needed:&lt;/p&gt;
+&lt;p&gt;We will just modify the package version for unicorn, &lt;strong&gt;dont forget to modify setup file!!!&lt;/strong&gt;&lt;/p&gt;
+&lt;h6 id&gt;Packages needed:&lt;/h6&gt;
 &lt;pre&gt;&lt;code&gt;(venv)$ grep -A34 'install_requires' Ein/Cuckoo-2.0.7/setup.py
     install_requires=[
         &quot;alembic==1.0.10&quot;,
