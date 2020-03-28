@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="/blog/author/tomato/feed.xml" rel="self" type="application/atom+xml" />
   <link href="/blog/" rel="alternate" type="text/html" />
-  <updated>2020-03-28T01:54:00+00:00</updated>
+  <updated>2020-03-28T01:59:15+00:00</updated>
   <id>/blog/author/tomato/feed.xml</id>
 
   
@@ -218,7 +218,7 @@ Verify, make sure you get no results then redo remove i386:
 &lt;/code&gt;&lt;/pre&gt;
 
 
-&lt;pre&gt;&lt;code&gt;pip install Ein/capstone-3.0.5rc2/
+&lt;pre&gt;&lt;code&gt;(venv)$ pip install Ein/capstone-3.0.5rc2/
 Processing ./Ein/capstone-3.0.5rc2
 Building wheels for collected packages: capstone
   Building wheel for capstone (setup.py) ... done
@@ -232,7 +232,7 @@ Successfully installed capstone-3.0.5rc2
 
 &lt;p&gt;Note that if you have any issues with libmagic (python-libmagic), install version 0.4.12&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;
-pip uninstall python-libmagic
+(venv)$ pip uninstall python-libmagic
 Found existing installation: python-libmagic 0.4.0
 Uninstalling python-libmagic-0.4.0:
   Would remove:
@@ -241,12 +241,54 @@ Uninstalling python-libmagic-0.4.0:
 Proceed (y/n)? y
   Successfully uninstalled python-libmagic-0.4.0
 
-pip -qq install python-magic==0.4.12
+(venv)$ pip -qq install python-magic==0.4.12
 Processing /Users/bebop/Library/Caches/pip/wheels/6f/b3/f6/fcc71a6a0c531119ba3be3070a0ca7fb08fb7fa5e666e4d9b7/python_magic-0.4.12-py2-none-any.whl
 Installing collected packages: python-magic
 Successfully installed python-magic-0.4.12
 &lt;/code&gt;&lt;/pre&gt;
 
+
+
+
+We will just add a modify the package version for unicorn, &lt;strong&gt;dont forget to modify setup file!!!&lt;/strong&gt;
+Packages needed:
+&lt;pre&gt;&lt;code&gt;(venv)$ grep -A34 'install_requires' Ein/Cuckoo-2.0.7/setup.py
+    install_requires=[
+        &quot;alembic==1.0.10&quot;,
+        &quot;androguard==3.0.1&quot;,
+        &quot;beautifulsoup4==4.5.3&quot;,
+        &quot;chardet==2.3.0&quot;,
+        &quot;click==6.6&quot;,
+        &quot;django==1.8.4&quot;,
+        &quot;django_extensions==1.6.7&quot;,
+        &quot;dpkt==1.8.7&quot;,
+        &quot;egghatch&gt;=0.2.3, &lt;0.3&quot;,
+        &quot;elasticsearch==5.3.0&quot;,
+        &quot;flask==0.12.2&quot;,
+        &quot;flask-sqlalchemy==2.4.0&quot;,
+        &quot;httpreplay&gt;=0.2.4, &lt;0.3&quot;,
+        &quot;ipaddress&gt;=1.0.22&quot;,
+        &quot;gevent&gt;=1.2, &lt;1.3&quot;,
+        &quot;jinja2==2.9.6&quot;,
+        &quot;jsbeautifier==1.6.2&quot;,
+        &quot;oletools==0.51&quot;,
+        &quot;peepdf&gt;=0.4.2, &lt;0.5&quot;,
+        &quot;pefile2==1.2.11&quot;,
+        &quot;pillow==3.2&quot;,
+        &quot;pyelftools==0.24&quot;,
+        &quot;pyguacamole==0.6&quot;,
+        &quot;pymisp==2.4.106&quot;,
+        &quot;pymongo==3.0.3&quot;,
+        &quot;python-dateutil==2.4.2&quot;,
+        &quot;python-magic==0.4.12&quot;,
+        &quot;roach&gt;=0.1.2, &lt;0.2&quot;,
+        &quot;sflock&gt;=0.3.10, &lt;0.4&quot;,
+        &quot;sqlalchemy==1.3.3&quot;,
+        &lt;span style=&quot;color:red&quot;&gt;&quot;unicorn==1.0.2rc1&quot;,&lt;/p&gt;
+        &quot;wakeonlan==0.2.2&quot;,
+        &quot;yara-python==3.6.3&quot;,
+    ],
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h6 id=&quot;heading6&quot;&gt;Finally, install Cuckoos&lt;/h6&gt;
 &lt;pre&gt;&lt;code&gt;(venv)$ cd ~/cuckoo_sanbox/
