@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="/blog/tag/cuckoos/feed.xml" rel="self" type="application/atom+xml" />
   <link href="/blog/" rel="alternate" type="text/html" />
-  <updated>2020-03-28T06:26:53+00:00</updated>
+  <updated>2020-03-28T06:31:19+00:00</updated>
   <id>/blog/tag/cuckoos/feed.xml</id>
 
   
@@ -56,8 +56,8 @@ Please use the &lt;a title=&quot;Cuckoos Project&quot; href=&quot;https://cuckoo
 
 &lt;hr /&gt;
 &lt;h2 id&gt;Base macOS&lt;/h2&gt;
-&lt;p&gt;On a new macOS system there are a couple things we need to install, we will call section pre-install.&lt;br&gt;
-For manual install we will need multiple packages, some will have issues.&lt;br&gt;
+&lt;p&gt;On a new macOS system there are a couple things we need to install, we will call section pre-install.
+For manual install we will need multiple packages, some will have issues.
 After fixing them we will move onto the install and startup of Cuckoos.&lt;/p&gt;
 
 &lt;h3 id=&quot;Pre-install&quot;&gt;Pre-install collection&lt;/h3&gt;
@@ -81,12 +81,11 @@ After fixing them we will move onto the install and startup of Cuckoos.&lt;/p&gt
 
 &lt;hr /&gt;
 
-&lt;strong&gt;Install pip&lt;/strong&gt;
+&lt;h4 id&gt;Install pip&lt;/h4&gt;
 &lt;pre&gt;&lt;code&gt;$ sudo easy_install pip 
 &lt;/code&gt;&lt;/pre&gt;
 
-
-&lt;strong&gt;Install virtualenv &amp; activate:&lt;/strong&gt;
+&lt;h4 id&gt;Install virtualenv &amp; activate:&lt;/h4&gt;
 &lt;pre&gt;&lt;code&gt;$ cd cuckoo_sanbox/
 $ virtualenv venv
 virtualenv venv
@@ -207,7 +206,7 @@ src
 ./src/make.sh:		export LIBARCHS=&quot;i386 x86_64&quot;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;delete “i386” from line 63 in the make.sh file,&lt;br&gt;
+&lt;p&gt;delete “i386” from line 63 in the make.sh file,
 should look like below when edited:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;(venv)$grep -r 'export LIBARCHS' ~/cuckoo_sanbox/Ein/capstone-3.0.5rc2/src
 		export LIBARCHS=&quot;x86_64&quot;

@@ -177,8 +177,8 @@ Please use the <a title="Cuckoos Project" href="https://cuckoosandbox.org/">Cuck
 
 <hr />
 <h2 id>Base macOS</h2>
-<p>On a new macOS system there are a couple things we need to install, we will call section pre-install.<br>
-For manual install we will need multiple packages, some will have issues.<br>
+<p>On a new macOS system there are a couple things we need to install, we will call section pre-install.
+For manual install we will need multiple packages, some will have issues.
 After fixing them we will move onto the install and startup of Cuckoos.</p>
 
 <h3 id="Pre-install">Pre-install collection</h3>
@@ -202,12 +202,11 @@ After fixing them we will move onto the install and startup of Cuckoos.</p>
 
 <hr />
 
-<strong>Install pip</strong>
+<h4 id>Install pip</h4>
 <pre><code>$ sudo easy_install pip 
 </code></pre>
 
-
-<strong>Install virtualenv & activate:</strong>
+<h4 id>Install virtualenv & activate:</h4>
 <pre><code>$ cd cuckoo_sanbox/
 $ virtualenv venv
 virtualenv venv
@@ -328,7 +327,7 @@ src
 ./src/make.sh:		export LIBARCHS="i386 x86_64"
 </code></pre>
 
-<p>delete “i386” from line 63 in the make.sh file,<br>
+<p>delete “i386” from line 63 in the make.sh file,
 should look like below when edited:</p>
 <pre><code>(venv)$grep -r 'export LIBARCHS' ~/cuckoo_sanbox/Ein/capstone-3.0.5rc2/src
 		export LIBARCHS="x86_64"
