@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="/blog/tag/cuckoos/feed.xml" rel="self" type="application/atom+xml" />
   <link href="/blog/" rel="alternate" type="text/html" />
-  <updated>2020-03-28T01:11:34+00:00</updated>
+  <updated>2020-03-28T01:14:44+00:00</updated>
   <id>/blog/tag/cuckoos/feed.xml</id>
 
   
@@ -98,7 +98,6 @@ $ cd venv
 
 &lt;pre&gt;&lt;code&gt;
 (venv)$ pip install -U cuckoo
-PYTHONWARNINGS=ignore:DEPRECATION pip install cuckoo
     Processing
     …
 Collecting django==1.8.4
@@ -121,7 +120,6 @@ Failed to build unicorn capstone
 &lt;h4 id=&quot;fix&quot;&gt;Tested and failed&lt;/h4&gt;
 
 &lt;p&gt;We will need to download Cuckoos, edit capstone package, and modify Cuckoo criteria list of the package&lt;/p&gt;
-&lt;p&gt; adding fix...&lt;/p&gt;
 
 
 
