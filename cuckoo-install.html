@@ -197,7 +197,8 @@ After fixing them we will move onto the install and startup of Cuckoos.</p>
 
 <h3 id="install">Cuckoos Install</strong>
 <ul>
-<li>Test</li>
+<li>Install</li>
+<li>Run</li>
 </ul>
 
 <hr />
@@ -221,7 +222,9 @@ $ cd venv
 </code></pre>
 
 
-<p>So, when you try to install Cuckoos from pip, as seen below, you will get an error on <span style="color:red">capstone</span> and <span style="color:red">unicorn</span> packages:</p>
+
+<p>So, when you try to install Cuckoos from pip, as seen below, you will get an error on <span style="color:red">capstone</span> and <span style="color:red">unicorn</span> packages:
+</p>
 
 <pre><code>
 (venv)$ pip install -U cuckoo
@@ -370,8 +373,7 @@ Successfully installed python-magic-0.4.12
 
 
 
-We will just add a modify the package version for unicorn, <strong>dont forget to modify setup file!!!</strong>
-Packages needed:
+<p>We will just add a modify the package version for unicorn, <strong>dont forget to modify setup file!!!</strong><wbr>Packages needed:</p>
 <pre><code>(venv)$ grep -A34 'install_requires' Ein/Cuckoo-2.0.7/setup.py
     install_requires=[
         "alembic==1.0.10",

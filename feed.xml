@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/blog/" rel="alternate" type="text/html" /><updated>2020-03-28T06:31:19+00:00</updated><id>/blog/</id><title type="html">Blog</title><subtitle>A new beginning...</subtitle><entry><title type="html">Installing Cuckoo Sandbox on macOS</title><link href="/blog/cuckoo-install" rel="alternate" type="text/html" title="Installing Cuckoo Sandbox on macOS" /><published>2020-03-22T04:20:00+00:00</published><updated>2020-03-22T04:20:00+00:00</updated><id>/blog/cuckoo-install</id><content type="html" xml:base="/blog/cuckoo-install">&lt;p&gt;In this section we will cover only installing Cuckoos and not the full configuration process, since this is really the most difficult hurdle I have been hearing from Security Analyst.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/blog/" rel="alternate" type="text/html" /><updated>2020-03-28T06:40:22+00:00</updated><id>/blog/</id><title type="html">Blog</title><subtitle>A new beginning...</subtitle><entry><title type="html">Installing Cuckoo Sandbox on macOS</title><link href="/blog/cuckoo-install" rel="alternate" type="text/html" title="Installing Cuckoo Sandbox on macOS" /><published>2020-03-22T04:20:00+00:00</published><updated>2020-03-22T04:20:00+00:00</updated><id>/blog/cuckoo-install</id><content type="html" xml:base="/blog/cuckoo-install">&lt;p&gt;In this section we will cover only installing Cuckoos and not the full configuration process, since this is really the most difficult hurdle I have been hearing from Security Analyst.
 Please use the &lt;a title=&quot;Cuckoos Project&quot; href=&quot;https://cuckoosandbox.org/&quot;&gt;Cuckoos Project &lt;/a&gt; for recommendations in configuring Cuckoos Sandbox.&lt;/p&gt;
 
 &lt;hr /&gt;
@@ -23,7 +23,8 @@ After fixing them we will move onto the install and startup of Cuckoos.&lt;/p&gt
 
 &lt;h3 id=&quot;install&quot;&gt;Cuckoos Install&lt;/strong&gt;
 &lt;ul&gt;
-&lt;li&gt;Test&lt;/li&gt;
+&lt;li&gt;Install&lt;/li&gt;
+&lt;li&gt;Run&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;hr /&gt;
@@ -47,7 +48,9 @@ $ cd venv
 &lt;/code&gt;&lt;/pre&gt;
 
 
-&lt;p&gt;So, when you try to install Cuckoos from pip, as seen below, you will get an error on &lt;span style=&quot;color:red&quot;&gt;capstone&lt;/span&gt; and &lt;span style=&quot;color:red&quot;&gt;unicorn&lt;/span&gt; packages:&lt;/p&gt;
+
+&lt;p&gt;So, when you try to install Cuckoos from pip, as seen below, you will get an error on &lt;span style=&quot;color:red&quot;&gt;capstone&lt;/span&gt; and &lt;span style=&quot;color:red&quot;&gt;unicorn&lt;/span&gt; packages:
+&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;
 (venv)$ pip install -U cuckoo
@@ -196,8 +199,7 @@ Successfully installed python-magic-0.4.12
 
 
 
-We will just add a modify the package version for unicorn, &lt;strong&gt;dont forget to modify setup file!!!&lt;/strong&gt;
-Packages needed:
+&lt;p&gt;We will just add a modify the package version for unicorn, &lt;strong&gt;dont forget to modify setup file!!!&lt;/strong&gt;&lt;wbr&gt;Packages needed:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;(venv)$ grep -A34 'install_requires' Ein/Cuckoo-2.0.7/setup.py
     install_requires=[
         &quot;alembic==1.0.10&quot;,
