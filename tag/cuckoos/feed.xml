@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="/blog/tag/cuckoos/feed.xml" rel="self" type="application/atom+xml" />
   <link href="/blog/" rel="alternate" type="text/html" />
-  <updated>2020-03-28T06:44:14+00:00</updated>
+  <updated>2020-03-28T06:54:54+00:00</updated>
   <id>/blog/tag/cuckoos/feed.xml</id>
 
   
@@ -68,13 +68,13 @@ After fixing them we will move onto the install and startup of Cuckoos.&lt;/p&gt
 &lt;li&gt;setuptools&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;install&quot;&gt;Install Issues&lt;/h3&gt;
+&lt;h3 id&gt;Install Issues&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Capstone&lt;/li&gt;
 &lt;li&gt;Unicorn&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;install&quot;&gt;Cuckoos Install&lt;/strong&gt;
+&lt;h3 id=&quot;install&quot;&gt;Cuckoos Install&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Install&lt;/li&gt;
 &lt;li&gt;Run&lt;/li&gt;
@@ -82,11 +82,11 @@ After fixing them we will move onto the install and startup of Cuckoos.&lt;/p&gt
 
 &lt;hr /&gt;
 
-&lt;h4 id&gt;Install pip&lt;/h4&gt;
+&lt;h6 id&gt;Install pip&lt;/h6&gt;
 &lt;pre&gt;&lt;code&gt;$ sudo easy_install pip 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h4 id&gt;Install virtualenv &amp; activate:&lt;/h4&gt;
+&lt;h6 id&gt;Install virtualenv &amp; activate:&lt;/h6&gt;
 &lt;pre&gt;&lt;code&gt;$ cd cuckoo_sanbox/
 $ virtualenv venv
 virtualenv venv
@@ -128,7 +128,7 @@ Failed to build unicorn capstone
 &lt;h4 id=&quot;fix&quot;&gt;Tested and failed&lt;/h4&gt;
 &lt;p&gt;We will need to download Cuckoos, edit capstone package, and modify Cuckoo criteria list of the package, but lets walk through the steps&lt;/p&gt;
 
-&lt;h6 id=&quot;fix&quot;&gt;Download cuckoo, since it will fail on venv pip install:&lt;/h6&gt;
+&lt;h6 id&gt;Download cuckoo, since it will fail on venv pip install:&lt;/h6&gt;
 
 &lt;pre&gt;&lt;code&gt;
 (venv)$ pip download cuckoo
@@ -146,7 +146,7 @@ Successfully downloaded cuckoo…
 &lt;/code&gt;&lt;/pre&gt;
 
 
-&lt;h6 id=&quot;fix&quot;&gt;Take a look at packages:&lt;/h6&gt;
+&lt;h6 id&gt;Take a look at packages:&lt;/h6&gt;
 &lt;pre&gt;&lt;code&gt;(venv)$ ls | xargs -n 1 | grep 'Cuck\|cap\|uni'
 Cuckoo-2.0.7.tar.gz
 capstone-3.0.5rc2.tar.gz
@@ -169,7 +169,7 @@ Building wheels for collected packages: Cuckoo, &lt;span style=&quot;color:red&q
 …
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h4 id=&quot;fix&quot;&gt;The fix&lt;/h4&gt;
+&lt;h3 id=&quot;fix&quot;&gt;The fix&lt;/h3&gt;
 
 &lt;p&gt;In order to fix issue, a few tweaks are needed on capstone.  Let’s make some edits on the packages but since clutter is messy lets isolate our work by creating a temp directory called &lt;strong&gt;Ein&lt;bold&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;h6 id&gt;De-package and edits:&lt;/h6&gt;
@@ -201,7 +201,7 @@ src
 &lt;/code&gt;&lt;/pre&gt;
 
 
-&lt;p&gt;Captone package edit&lt;/p&gt;
+&lt;h6 id&gt;Captone package edit&lt;/h6&gt;
 &lt;pre&gt;&lt;code&gt;(venv)$ cd ~/cuckoo_sanbox/Ein/capstone-3.0.5rc2/src
 &lt;/code&gt;&lt;/pre&gt;
 
@@ -252,7 +252,8 @@ Successfully installed python-magic-0.4.12
 
 
 
-&lt;p&gt;We will just add a modify the package version for unicorn, &lt;strong&gt;dont forget to modify setup file!!!&lt;/strong&gt;&lt;wbr&gt;Packages needed:&lt;/p&gt;
+&lt;p&gt;We will just add a modify the package version for unicorn, &lt;strong&gt;dont forget to modify setup file!!!&lt;/strong&gt;
+	Packages needed:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;(venv)$ grep -A34 'install_requires' Ein/Cuckoo-2.0.7/setup.py
     install_requires=[
         &quot;alembic==1.0.10&quot;,

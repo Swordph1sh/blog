@@ -189,13 +189,13 @@ After fixing them we will move onto the install and startup of Cuckoos.</p>
 <li>setuptools</li>
 </ul>
 
-<h3 id="install">Install Issues</h3>
+<h3 id>Install Issues</h3>
 <ul>
 <li>Capstone</li>
 <li>Unicorn</li>
 </ul>
 
-<h3 id="install">Cuckoos Install</strong>
+<h3 id="install">Cuckoos Install</h3>
 <ul>
 <li>Install</li>
 <li>Run</li>
@@ -203,11 +203,11 @@ After fixing them we will move onto the install and startup of Cuckoos.</p>
 
 <hr />
 
-<h4 id>Install pip</h4>
+<h6 id>Install pip</h6>
 <pre><code>$ sudo easy_install pip 
 </code></pre>
 
-<h4 id>Install virtualenv & activate:</h4>
+<h6 id>Install virtualenv & activate:</h6>
 <pre><code>$ cd cuckoo_sanbox/
 $ virtualenv venv
 virtualenv venv
@@ -249,7 +249,7 @@ Failed to build unicorn capstone
 <h4 id="fix">Tested and failed</h4>
 <p>We will need to download Cuckoos, edit capstone package, and modify Cuckoo criteria list of the package, but lets walk through the steps</p>
 
-<h6 id="fix">Download cuckoo, since it will fail on venv pip install:</h6>
+<h6 id>Download cuckoo, since it will fail on venv pip install:</h6>
 
 <pre><code>
 (venv)$ pip download cuckoo
@@ -267,7 +267,7 @@ Successfully downloaded cuckoo…
 </code></pre>
 
 
-<h6 id="fix">Take a look at packages:</h6>
+<h6 id>Take a look at packages:</h6>
 <pre><code>(venv)$ ls | xargs -n 1 | grep 'Cuck\|cap\|uni'
 Cuckoo-2.0.7.tar.gz
 capstone-3.0.5rc2.tar.gz
@@ -290,7 +290,7 @@ Building wheels for collected packages: Cuckoo, <span style="color:red">unicorn<
 …
 </code></pre>
 
-<h4 id="fix">The fix</h4>
+<h3 id="fix">The fix</h3>
 
 <p>In order to fix issue, a few tweaks are needed on capstone.  Let’s make some edits on the packages but since clutter is messy lets isolate our work by creating a temp directory called <strong>Ein<bold></strong></p>
 <h6 id>De-package and edits:</h6>
@@ -322,7 +322,7 @@ src
 </code></pre>
 
 
-<p>Captone package edit</p>
+<h6 id>Captone package edit</h6>
 <pre><code>(venv)$ cd ~/cuckoo_sanbox/Ein/capstone-3.0.5rc2/src
 </code></pre>
 
@@ -373,7 +373,8 @@ Successfully installed python-magic-0.4.12
 
 
 
-<p>We will just add a modify the package version for unicorn, <strong>dont forget to modify setup file!!!</strong><wbr>Packages needed:</p>
+<p>We will just add a modify the package version for unicorn, <strong>dont forget to modify setup file!!!</strong>
+	Packages needed:</p>
 <pre><code>(venv)$ grep -A34 'install_requires' Ein/Cuckoo-2.0.7/setup.py
     install_requires=[
         "alembic==1.0.10",
