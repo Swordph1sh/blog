@@ -97,3 +97,4 @@ exclude:
   - changelog.md
   - "*.Rmd"
   - .git*
+  - _posts/2021-02-06-A-blog-for-noobs.html
