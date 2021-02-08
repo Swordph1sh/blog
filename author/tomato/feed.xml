@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="/blog/author/tomato/feed.xml" rel="self" type="application/atom+xml" />
   <link href="/blog/" rel="alternate" type="text/html" />
-  <updated>2021-02-07T03:50:57+00:00</updated>
+  <updated>2021-02-08T08:42:28+00:00</updated>
   <id>/blog/author/tomato/feed.xml</id>
 
   
@@ -61,9 +61,114 @@
 &lt;/ol&gt;
 
 
+&lt;p&gt;Although a lot of future blog post will cover thing in the Software and User Domain, it’s good to know how these categories fit together.&lt;/p&gt;
 
 
-&lt;p&gt;Although a lot of future blog post will cover things in the Software and User Domain, it’s good to know how these categories fit together.&lt;/p&gt;</content>
+&lt;p&gt;&lt;img src=&quot;assets/images/it_category_list.png&quot; alt=&quot;IT Categories&quot; /&gt;&lt;/p&gt;
+
+#----------------------------------------------  SECTION ONE  ----------------------------------------------
+&lt;h2 id=&quot;heading2&quot;&gt;Hardware Domain&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;assets/images/it_hardware.jpg&quot; alt=&quot;Hardware Domain&quot; /&gt;&lt;/p&gt;
+
+
+&lt;p&gt;Hardware domain consist of physical components that make up items for use within IT.
+An example if a physical hardware is something that can be physically touched, held, moved.
+A mobile phone, computer chip, computer resistors or similar motherboard components, keyboard &amp; mouse, routers, and printers are all examples of physical components that can be physically touched.&lt;/p&gt;
+
+&lt;h5 id=&quot;heading5&quot;&gt;Hardware Jobs or commons&lt;/h5&gt;
+&lt;p&gt;Typical easy jobs to obtain with little experience in IT relate to Helpdesk Support, but help desk is not limited to one domain.  Some Helpdesk support encompasses all three domains.
+Helpdesk Support - Fixing hardware related issues, computer won’t turn on.&lt;/p&gt;
+Fixing 
+
+&lt;p&gt;&lt;img src=&quot;assets/images/it_hardware_jobs.jpg&quot; alt=&quot;Hardware Jobs&quot; /&gt;&lt;/p&gt;
+
+&lt;h5 id=&quot;heading5&quot;&gt;Personal example of Hardware space&lt;/h5&gt;
+&lt;p&gt;There was a time when an LED light stopped working. The issue was a wire connection from the LED light to the battery power source, the wire had been snapped off.  Fixing it was as simple as connecting the wire and power box together, but it required some soldering.  So, working my magic I was able to solder the wire to the power source and voila, the LED light works again.&lt;/p&gt;
+#----------------------------------------------  SECTION ONE  ----------------------------------------------
+
+
+
+
+#----------------------------------------------  SECTION TWO  ----------------------------------------------
+&lt;h2 id=&quot;heading2&quot;&gt;Software Domain&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/it_software_coding.jpg&quot; alt=&quot;Software Domain&quot; /&gt;&lt;/p&gt;
+
+
+&lt;p&gt;The software domain usually involves developing code or making changes to a device (system or software).&lt;/p&gt;
+
+&lt;p&gt;An extreme example would be developing an application for a mobile phone or Operating System.&lt;/p&gt;
+
+&lt;p&gt;A less extreme example is making a change to a firewall (local system or network firewall) where the firewall has a change in the behavior.  Let’s say, something as easy as blocking a website or allowing an application to communicate on a port not previously allowed.&lt;/p&gt;
+
+&lt;p&gt;This is the space where code is created r changed.
+Some other examples of code development/change listed below.&lt;/p&gt;
+
+
+&lt;h3 id=&quot;orderedlist&quot;&gt;Software Application:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Adobe Photoshop&lt;/li&gt;
+&lt;li&gt;The Next “Among Us” game&lt;/li&gt;
+&lt;li&gt;Coding in general; C++, Java, Python, etc.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;orderedlist&quot;&gt;Software Administration:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Device Firmware&lt;/li&gt;
+&lt;li&gt;Computer Operating System&lt;/li&gt;
+&lt;li&gt;System Policy Changes&lt;/li&gt;
+&lt;li&gt;System configurations &amp; Behavior&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h5 id=&quot;heading5&quot;&gt;Software Jobs or commons&lt;/h5&gt;
+&lt;p&gt;Programmer – Codes all day; and nights, and weekends, and holidays, also coding in dreams.&lt;/p&gt;
+&lt;p&gt;Web Developer – Makes websites&lt;/p&gt;
+&lt;p&gt;Analyst – Analyzes data&lt;/p&gt;
+
+&lt;p&gt;From experience the Cyber Security umbrella best fits into the system administrations, and that fits in the Software domain.&lt;/p&gt;
+
+&lt;h5 id=&quot;heading5&quot;&gt;Personal example of Software space&lt;/h5&gt;
+&lt;p&gt;I was able to configure my printer to work correctly without fail; let me tell you that’s an achievement of its own.  I could finally print from home, no longer driving to school for a simple print job.&lt;/p&gt;
+
+#----------------------------------------------  SECTION TWO  ----------------------------------------------
+
+
+
+#----------------------------------------------  SECTION THREE  ----------------------------------------------
+&lt;h2 id=&quot;heading2&quot;&gt;User Domain&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;assets/images/it_user_app.jpg&quot; alt=&quot;User Domain&quot; /&gt;&lt;/p&gt;
+
+
+
+&lt;p&gt;This is where all the fun is, the usage of software; applications, website, streaming, twitter, and Instagram.  In general, it’s the usage of an application without changing the behavior of a device or system.&lt;/p&gt;
+
+&lt;p&gt;An extreme example, using software to calculate coordinates to launch a space ship to the moon.&lt;/p&gt;
+
+&lt;p&gt;A less extreme, using software to design a spaceship.&lt;/p&gt;
+
+&lt;p&gt;Ok, a lesser example, using the recording software on a mobile phone to record the space ship launch and edit video for Instagram posting.  Give me those like!!!&lt;/p&gt;
+
+&lt;h5 id=&quot;heading5&quot;&gt;User Jobs or common&lt;/h5&gt;
+&lt;p&gt;Photographer – Uses apps to upload pictures to Instagram.&lt;/p&gt;
+
+
+
+&lt;h5 id=&quot;heading5&quot;&gt;Personal example of User space&lt;/h5&gt;
+&lt;p&gt;Before Covid, enjoyed outdoor photography, mostly taking pictures of landscape or background scenery (Cherry Blossom, Festivals, Special Events).&lt;/p&gt;
+
+
+#----------------------------------------------  SECTION THREE  ----------------------------------------------
+
+
+#----------------------------------------------  CONCLUSION  ----------------------------------------------
+&lt;h2 id=&quot;heading2&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;Hardware is the laptop, no operating system installed, no apps installed.&lt;/p&gt;
+&lt;p&gt;Software is the operating system all the apps, wi-fi, and so on.&lt;/p&gt;
+&lt;p&gt;User space is usage of an applications(app), web-browser, Instagram, Netflix, email, etc.&lt;/p&gt;
+
+
+#----------------------------------------------  CONCLUSION  ----------------------------------------------</content>
 
       
       
