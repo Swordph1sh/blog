@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="/blog/tag/getting-started/feed.xml" rel="self" type="application/atom+xml" />
   <link href="/blog/" rel="alternate" type="text/html" />
-  <updated>2021-02-08T10:11:42+00:00</updated>
+  <updated>2021-02-08T10:23:30+00:00</updated>
   <id>/blog/tag/getting-started/feed.xml</id>
 
   
@@ -125,6 +125,7 @@ Some other examples of code development/change listed below.&lt;/p&gt;
 
 
 &lt;hr /&gt;
+&lt;p&gt;&lt;img src=&quot;assets/images/it_user_app.jpg&quot; alt=&quot;User Domain&quot; /&gt;&lt;/p&gt;
 
 &lt;h5 id=&quot;heading2&quot;&gt;User Domain&lt;/h5&gt;
 
@@ -150,7 +151,6 @@ Some other examples of code development/change listed below.&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;p&gt;&lt;img src=&quot;assets/images/it_category_list.png&quot; alt=&quot;IT Categories List&quot; /&gt;&lt;/p&gt;
 &lt;h5 id=&quot;heading5&quot;&gt;Conclusion&lt;/h5&gt;
 
 
@@ -160,7 +160,8 @@ Some other examples of code development/change listed below.&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;p&gt;&lt;img src=&quot;assets/images/it_user_app.jpg&quot; alt=&quot;User Domain&quot; /&gt;&lt;/p&gt;</content>
+
+&lt;p&gt;&lt;img src=&quot;assets/images/it_category_list.png&quot; alt=&quot;IT Categories List&quot; /&gt;&lt;/p&gt;</content>
 
       
       
