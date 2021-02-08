@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/blog/" rel="alternate" type="text/html" /><updated>2021-02-08T10:23:30+00:00</updated><id>/blog/</id><title type="html">Blog</title><subtitle>A new beginning...</subtitle><entry><title type="html">The Security Rabbit Hole - A Blog for Noobs</title><link href="/blog/A-blog-for-noobs" rel="alternate" type="text/html" title="The Security Rabbit Hole  - A Blog for Noobs" /><published>2021-02-06T06:00:00+00:00</published><updated>2021-02-06T06:00:00+00:00</updated><id>/blog/A-blog-for-noobs</id><content type="html" xml:base="/blog/A-blog-for-noobs">&lt;p&gt;The section will cover a high overview of Information Technology (IT) split into 3 different categories and where Security fits best.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/blog/" rel="alternate" type="text/html" /><updated>2021-02-08T11:14:20+00:00</updated><id>/blog/</id><title type="html">Blog</title><subtitle>A new beginning...</subtitle><entry><title type="html">The Security Rabbit Hole - A Blog for Noobs</title><link href="/blog/A-blog-for-noobs" rel="alternate" type="text/html" title="The Security Rabbit Hole  - A Blog for Noobs" /><published>2021-02-06T06:00:00+00:00</published><updated>2021-02-06T06:00:00+00:00</updated><id>/blog/A-blog-for-noobs</id><content type="html" xml:base="/blog/A-blog-for-noobs">&lt;p&gt;The section will cover a high overview of Information Technology (IT) split into 3 different categories and where Security fits best.&lt;/p&gt;
 
 &lt;hr /&gt;
 &lt;h3 id=&quot;orderedlist&quot;&gt;The three differentiating categories within IT are:&lt;/h3&gt;
@@ -9,7 +9,7 @@
 &lt;/ol&gt;
 
 
-&lt;p&gt;Although a lot of future blog post will cover thing in the Software and User Domain, it’s good to know how these categories fit together.&lt;/p&gt;
+&lt;p&gt;Although a lot of future blog post will cover things in the Software and User Domain, it’s good to know how all these categories fit together.&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -17,13 +17,17 @@
 
 &lt;h5 id=&quot;heading5&quot;&gt;Hardware Domain&lt;/h5&gt;
 
-&lt;p&gt;Hardware domain consist of physical components that make up items for use within IT.
-An example if a physical hardware is something that can be physically touched, held, moved.
+&lt;p&gt;The Hardware Domain consist of physical components that make up items for use within IT.
+An example if a physical component is something that can be physically touched, held, moved.
 A mobile phone, computer chip, computer resistors or similar motherboard components, keyboard &amp; mouse, routers, and printers are all examples of physical components that can be physically touched.&lt;/p&gt;
 
 &lt;h6 id=&quot;heading6&quot;&gt;Hardware Jobs or commons&lt;/h6&gt;
 &lt;p&gt;Typical easy jobs to obtain with little experience in IT relate to Helpdesk Support, but help desk is not limited to one domain.  Some Helpdesk support encompasses all three domains.&lt;/p&gt;
-&lt;p&gt;Helpdesk Support - Fixing hardware related issues likewhen a computer won’t turn on.&lt;/p&gt;
+&lt;p&gt;Helpdesk Support: Fixing hardware related issues likewhen a computer won’t turn on.&lt;/p&gt;
+&lt;p&gt;IT Support ...&lt;/p&gt;
+&lt;p&gt;IT Support Specialist: ...&lt;/p&gt;
+&lt;p&gt;Technology Technician: ...&lt;/p&gt;
+
 Fixing
 
 &lt;p&gt;&lt;img src=&quot;assets/images/it_hardware_jobs.jpg&quot; alt=&quot;Hardware Jobs&quot; /&gt;&lt;/p&gt;
