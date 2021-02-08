@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="/blog/tag/getting-started/feed.xml" rel="self" type="application/atom+xml" />
   <link href="/blog/" rel="alternate" type="text/html" />
-  <updated>2021-02-08T09:20:12+00:00</updated>
+  <updated>2021-02-08T10:11:42+00:00</updated>
   <id>/blog/tag/getting-started/feed.xml</id>
 
   
@@ -70,34 +70,27 @@
 
 &lt;h5 id=&quot;heading5&quot;&gt;Hardware Domain&lt;/h5&gt;
 
-
 &lt;p&gt;Hardware domain consist of physical components that make up items for use within IT.
 An example if a physical hardware is something that can be physically touched, held, moved.
 A mobile phone, computer chip, computer resistors or similar motherboard components, keyboard &amp; mouse, routers, and printers are all examples of physical components that can be physically touched.&lt;/p&gt;
 
 &lt;h6 id=&quot;heading6&quot;&gt;Hardware Jobs or commons&lt;/h6&gt;
-&lt;p&gt;Typical easy jobs to obtain with little experience in IT relate to Helpdesk Support, but help desk is not limited to one domain.  Some Helpdesk support encompasses all three domains.
-Helpdesk Support - Fixing hardware related issues, computer won’t turn on.&lt;/p&gt;
-Fixing 
+&lt;p&gt;Typical easy jobs to obtain with little experience in IT relate to Helpdesk Support, but help desk is not limited to one domain.  Some Helpdesk support encompasses all three domains.&lt;/p&gt;
+&lt;p&gt;Helpdesk Support - Fixing hardware related issues likewhen a computer won’t turn on.&lt;/p&gt;
+Fixing
 
 &lt;p&gt;&lt;img src=&quot;assets/images/it_hardware_jobs.jpg&quot; alt=&quot;Hardware Jobs&quot; /&gt;&lt;/p&gt;
 
 &lt;h6 id=&quot;heading6&quot;&gt;Personal example of Hardware space&lt;/h6&gt;
 &lt;p&gt;There was a time when an LED light stopped working. The issue was a wire connection from the LED light to the battery power source, the wire had been snapped off.  Fixing it was as simple as connecting the wire and power box together, but it required some soldering.  So, working my magic I was able to solder the wire to the power source and voila, the LED light works again.&lt;/p&gt;
-
-
-
 &lt;hr /&gt;
-
-&lt;h5 id=&quot;heading5&quot;&gt;Software Domain&lt;/h5&gt;
 
 &lt;p&gt;&lt;img src=&quot;assets/images/it_software_coding.jpg&quot; alt=&quot;Software Domain&quot; /&gt;&lt;/p&gt;
 
+&lt;h5 id=&quot;heading5&quot;&gt;Software Domain&lt;/h5&gt;
 
 &lt;p&gt;The software domain usually involves developing code or making changes to a device (system or software).&lt;/p&gt;
-
 &lt;p&gt;An extreme example would be developing an application for a mobile phone or Operating System.&lt;/p&gt;
-
 &lt;p&gt;A less extreme example is making a change to a firewall (local system or network firewall) where the firewall has a change in the behavior.  Let’s say, something as easy as blocking a website or allowing an application to communicate on a port not previously allowed.&lt;/p&gt;
 
 &lt;p&gt;This is the space where code is created r changed.
@@ -133,7 +126,6 @@ Some other examples of code development/change listed below.&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;p&gt;&lt;img src=&quot;assets/images/it_user_app.jpg&quot; alt=&quot;User Domain&quot; /&gt;&lt;/p&gt;
 &lt;h5 id=&quot;heading2&quot;&gt;User Domain&lt;/h5&gt;
 
 
@@ -152,7 +144,7 @@ Some other examples of code development/change listed below.&lt;/p&gt;
 
 
 &lt;h2 id=&quot;heading2&quot;&gt;Personal example of User space&lt;/h2&gt;
-&lt;p&gt;Before Covid, enjoyed outdoor photography, mostly taking pictures of landscape or background scenery (Cherry Blossom, Festivals, Special Events).&lt;/p&gt;
+&lt;p&gt;Before Covid, little things outdoor photography were a joy. Mostly pictures involved taking pictures of landscape or background scenery (Cherry Blossom, Festivals, and Special Events).&lt;/p&gt;
 
 
 
@@ -162,11 +154,13 @@ Some other examples of code development/change listed below.&lt;/p&gt;
 &lt;h5 id=&quot;heading5&quot;&gt;Conclusion&lt;/h5&gt;
 
 
-&lt;p&gt;Hardware is the laptop, no operating system installed, no apps installed.&lt;/p&gt;
-&lt;p&gt;Software is the operating system all the apps, wi-fi, and so on.&lt;/p&gt;
+&lt;p&gt;Hardware is the laptop with no operating system installed; and no apps installed.&lt;/p&gt;
+&lt;p&gt;Software is the operating system and any apps installed on the laptop. This can include software to enable use of wi-fi, sound, graphics.&lt;/p&gt;
 &lt;p&gt;User space is usage of an applications(app), web-browser, Instagram, Netflix, email, etc.&lt;/p&gt;
 
-&lt;hr /&gt;</content>
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/it_user_app.jpg&quot; alt=&quot;User Domain&quot; /&gt;&lt;/p&gt;</content>
 
       
       
