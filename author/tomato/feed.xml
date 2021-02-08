@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="/blog/author/tomato/feed.xml" rel="self" type="application/atom+xml" />
   <link href="/blog/" rel="alternate" type="text/html" />
-  <updated>2021-02-08T08:42:28+00:00</updated>
+  <updated>2021-02-08T08:48:59+00:00</updated>
   <id>/blog/author/tomato/feed.xml</id>
 
   
@@ -66,7 +66,6 @@
 
 &lt;p&gt;&lt;img src=&quot;assets/images/it_category_list.png&quot; alt=&quot;IT Categories&quot; /&gt;&lt;/p&gt;
 
-#----------------------------------------------  SECTION ONE  ----------------------------------------------
 &lt;h2 id=&quot;heading2&quot;&gt;Hardware Domain&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&quot;assets/images/it_hardware.jpg&quot; alt=&quot;Hardware Domain&quot; /&gt;&lt;/p&gt;
 
@@ -84,12 +83,10 @@ Fixing
 
 &lt;h5 id=&quot;heading5&quot;&gt;Personal example of Hardware space&lt;/h5&gt;
 &lt;p&gt;There was a time when an LED light stopped working. The issue was a wire connection from the LED light to the battery power source, the wire had been snapped off.  Fixing it was as simple as connecting the wire and power box together, but it required some soldering.  So, working my magic I was able to solder the wire to the power source and voila, the LED light works again.&lt;/p&gt;
-#----------------------------------------------  SECTION ONE  ----------------------------------------------
 
 
 
 
-#----------------------------------------------  SECTION TWO  ----------------------------------------------
 &lt;h2 id=&quot;heading2&quot;&gt;Software Domain&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&quot;assets/images/it_software_coding.jpg&quot; alt=&quot;Software Domain&quot; /&gt;&lt;/p&gt;
@@ -130,11 +127,9 @@ Some other examples of code development/change listed below.&lt;/p&gt;
 &lt;h5 id=&quot;heading5&quot;&gt;Personal example of Software space&lt;/h5&gt;
 &lt;p&gt;I was able to configure my printer to work correctly without fail; let me tell you that’s an achievement of its own.  I could finally print from home, no longer driving to school for a simple print job.&lt;/p&gt;
 
-#----------------------------------------------  SECTION TWO  ----------------------------------------------
 
 
 
-#----------------------------------------------  SECTION THREE  ----------------------------------------------
 &lt;h2 id=&quot;heading2&quot;&gt;User Domain&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&quot;assets/images/it_user_app.jpg&quot; alt=&quot;User Domain&quot; /&gt;&lt;/p&gt;
 
@@ -157,18 +152,13 @@ Some other examples of code development/change listed below.&lt;/p&gt;
 &lt;p&gt;Before Covid, enjoyed outdoor photography, mostly taking pictures of landscape or background scenery (Cherry Blossom, Festivals, Special Events).&lt;/p&gt;
 
 
-#----------------------------------------------  SECTION THREE  ----------------------------------------------
 
 
-#----------------------------------------------  CONCLUSION  ----------------------------------------------
 &lt;h2 id=&quot;heading2&quot;&gt;Conclusion&lt;/h2&gt;
 
 &lt;p&gt;Hardware is the laptop, no operating system installed, no apps installed.&lt;/p&gt;
 &lt;p&gt;Software is the operating system all the apps, wi-fi, and so on.&lt;/p&gt;
-&lt;p&gt;User space is usage of an applications(app), web-browser, Instagram, Netflix, email, etc.&lt;/p&gt;
-
-
-#----------------------------------------------  CONCLUSION  ----------------------------------------------</content>
+&lt;p&gt;User space is usage of an applications(app), web-browser, Instagram, Netflix, email, etc.&lt;/p&gt;</content>
 
       
       
